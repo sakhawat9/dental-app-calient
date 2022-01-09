@@ -1,6 +1,8 @@
 function App() {
   return (
-    <div>Hello World</div>
+    <div>
+      <h1>This is a Dental Website</h1>
+    </div>
   );
 }
 
