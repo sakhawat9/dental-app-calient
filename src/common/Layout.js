@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
-import Header from "./Header";
+import HeaderTop from "./Header/HeaderTop";
 
 export default function Layout({ title, keywords, description, children }) {
   return (
@@ -10,7 +10,7 @@ export default function Layout({ title, keywords, description, children }) {
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
       </head>
-      <Header />
+      <HeaderTop />
       {children}
       <Footer />
     </>

@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import {
-    FaFacebookF,
-    FaInstagram,
-    FaLinkedinIn,
-    FaTwitter
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter
 } from "react-icons/fa";
 
-const Header = () => {
+const HeaderTop = () => {
   return (
     <div className="top-header">
       <div className="container">
@@ -60,4 +60,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderTop;
