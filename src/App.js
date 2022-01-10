@@ -1,6 +1,11 @@
+import "../src/assets/styles/scss/main.scss";
+import AppRouter from "./AppRouter";
+
 function App() {
   return (
-    <div>Hello World</div>
+    <div>
+      <AppRouter />
+    </div>
   );
 }
 
