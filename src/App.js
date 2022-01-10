@@ -1,8 +1,10 @@
+import "../src/assets/styles/scss/main.scss";
+import AppRouter from "./AppRouter";
+
 function App() {
   return (
     <div>
-      <h1>This is a Dental Website</h1>
-      <h1>This is a Dental Website</h1>
+      <AppRouter />
     </div>
   );
 }

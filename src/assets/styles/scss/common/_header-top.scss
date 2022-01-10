@@ -1,0 +1,60 @@
+.top-header {
+  @apply bg-black-500 py-3;
+  &__information {
+    @apply pl-0 mb-0;
+    li {
+      @apply text-base text-white font-medium inline-block relative;
+      margin-right: 18px;
+      padding-left: 22px;
+      &:last-child {
+        @apply mr-0;
+      }
+      i {
+        @apply absolute left-0 text-white text-base;
+        top: 2px;
+      }
+      a {
+        color: white;
+        &:hover {
+          @apply text-java-500;
+        }
+      }
+    }
+  }
+  &__social-media-icons {
+    @apply pl-0 mb-0 text-right;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        margin: 0 2px;
+        i {
+          display: inline-block;
+          line-height: 30px;
+          background-color: #1dbfcc;
+          color: white;
+          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+          text-align: center;
+          font-size: 16px;
+          border-radius: 8px;
+          transition: 0.6s;
+
+          &:hover {
+            background-color: white;
+            color: #1dbfcc;
+            transform: translateY(-2px);
+          }
+          svg {
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
