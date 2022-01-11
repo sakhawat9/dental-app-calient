@@ -11,11 +11,19 @@ const Services = () => {
   }, []);
   return (
     <div className="container">
+      <div>
+        <h2>
+          Enjoy Specialized Care Through Precision, Artistry, And Experience
+        </h2>
+      </div>
       <div className="grid gap-4 grid-cols-12">
         {services.slice(0, 4).map((service) => (
           <Service key={service.id} service={service}></Service>
         ))}
       </div>
+      <a href="#" className="default-btn">
+        View All Services
+      </a>
     </div>
   );
 };
