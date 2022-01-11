@@ -43,6 +43,17 @@ a {
   transition: 0.3s;
 }
 
+.section-padding {
+  padding-bottom: 75px;
+  padding-top: 100px;
+}
+.section-padding-t {
+  padding-top: 100px;
+}
+.section-padding-b {
+  padding-bottom: 75px;
+}
+
 .default-btn {
   padding: 15px 30px;
   text-align: center;
@@ -105,36 +116,14 @@ a {
   transition: var(--transition);
   border-radius: 5px;
   border: 2px solid var(--mainColor);
+  &:hover {
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+  }
 }
 
-// .optional-btn:before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 50%;
-//   width: 550px;
-//   height: 550px;
-//   margin: auto;
-//   background: var(--optionalColor);
-//   border-radius: 50%;
-//   z-index: -1;
-//   transform-origin: top center;
-//   transform: translateX(-50%) translateY(-5%) scale(0.4);
-//   transition: -webkit-transform 0.9s;
-//   transition: transform 0.9s;
-//   transition: transform 0.9s, -webkit-transform 0.9s;
-// }
-
-.optional-btn:hover {
-  background-color: var(--mainColor);
-  color: var(--whiteColor);
+.subtitle {
+  @apply inline-block text-java-500 border py-2 px-5 border-java-500 font-semibold mb-6 bg-white;
+  font-size: 14px;
+  border-radius: 50px;
 }
-
-// .optional-btn:hover:before {
-//   transition: -webkit-transform 1s;
-//   transition: transform 1s;
-//   transition: transform 1s, -webkit-transform 1s;
-//   transform: translateX(-45%) translateY(0) scale(1);
-//   transform-origin: bottom center;
-// }
