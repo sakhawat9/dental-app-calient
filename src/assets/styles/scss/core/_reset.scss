@@ -41,3 +41,55 @@ h6 {
 a {
   transition: 0.3s;
 }
+
+.default-btn {
+  padding: 15px 30px;
+  text-align: center;
+  color: var(--whiteColor);
+  font-size: var(--fontSize);
+  font-weight: 500;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px;
+  z-index: 0;
+  background-color: var(--mainColor);
+  box-shadow: none;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  border: 0;
+}
+
+.default-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 550px;
+  height: 550px;
+  margin: auto;
+  background: var(--optionalColor);
+  border-radius: 50%;
+  z-index: -1;
+  transform-origin: top center;
+  transform: translateX(-50%) translateY(-5%) scale(0.4);
+  transition: -webkit-transform 0.9s;
+  transition: transform 0.9s;
+  transition: transform 0.9s, -webkit-transform 0.9s;
+}
+
+.default-btn:hover {
+  color: var(--whiteColor);
+}
+
+.default-btn:hover:before {
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  transform: translateX(-45%) translateY(0) scale(1);
+  transform-origin: bottom center;
+}
