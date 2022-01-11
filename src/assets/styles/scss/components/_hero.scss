@@ -1,3 +1,9 @@
-.hero {
-  @apply bg-blue-600 h-36 p-32;
+.main-banner-content {
+  h1 {
+    @apply text-black-500;
+    font-size: 75px !important;
+  }
+  p {
+    @apply font-semibold text-gray-600;
+  }
 }
