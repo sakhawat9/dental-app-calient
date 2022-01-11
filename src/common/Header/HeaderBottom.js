@@ -11,7 +11,7 @@ const HeaderBottom = () => {
             <h1>
               <a
                 className="navbar-brand"
-                href="https://themes.hibootstrap.com/rola/"
+                href="#"
               >
                 Rola
               </a>
@@ -25,7 +25,7 @@ const HeaderBottom = () => {
             <h1>
               <a
                 className="navbar-brand"
-                href="https://themes.hibootstrap.com/rola/"
+                href="#"
               >
                 Rola
               </a>
@@ -42,16 +42,12 @@ const HeaderBottom = () => {
                   <a
                     title="Home"
                     href="#"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
                     className="dropdown-toggle nav-link"
                   >
                     Home
                   </a>
                   <ul
                     className="dropdown-menu"
-                    aria-labelledby="menu-item-dropdown-1438"
                     role="menu"
                   >
                     <li
@@ -59,7 +55,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Home One"
-                        href="https://themes.hibootstrap.com/rola/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Home One
@@ -70,7 +66,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Home Two"
-                        href="https://themes.hibootstrap.com/rola/home-two/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Home Two
@@ -81,7 +77,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Home Three"
-                        href="https://themes.hibootstrap.com/rola/home-three/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Home Three
@@ -92,7 +88,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Home Four"
-                        href="https://themes.hibootstrap.com/rola/home-four/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Home Four
@@ -106,16 +102,12 @@ const HeaderBottom = () => {
                   <a
                     title="Dentist"
                     href="#"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
                     className="dropdown-toggle nav-link"
                   >
                     Dentist
                   </a>
                   <ul
                     className="dropdown-menu"
-                    aria-labelledby="menu-item-dropdown-478"
                     role="menu"
                   >
                     <li
@@ -123,7 +115,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Dentist"
-                        href="https://themes.hibootstrap.com/rola/dentist/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Dentist
@@ -134,7 +126,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Single Dentist"
-                        href="https://themes.hibootstrap.com/rola/doctor-post/dr-ena-dicrosa/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Single Dentist
@@ -148,16 +140,12 @@ const HeaderBottom = () => {
                   <a
                     title="Services"
                     href="#"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
                     className="dropdown-toggle nav-link"
                   >
                     Services
                   </a>
                   <ul
                     className="dropdown-menu"
-                    aria-labelledby="menu-item-dropdown-479"
                     role="menu"
                   >
                     <li
@@ -165,7 +153,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Our Services"
-                        href="https://themes.hibootstrap.com/rola/our-services/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Our Services
@@ -176,7 +164,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Single Service"
-                        href="https://themes.hibootstrap.com/rola/service-post/quality-brackets/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Single Service
@@ -190,16 +178,12 @@ const HeaderBottom = () => {
                   <a
                     title="Pages"
                     href="#"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
                     className="dropdown-toggle nav-link"
                   >
                     Pages
                   </a>
                   <ul
                     className="dropdown-menu"
-                    aria-labelledby="menu-item-dropdown-370"
                     role="menu"
                   >
                     <li
@@ -207,7 +191,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="About Us"
-                        href="https://themes.hibootstrap.com/rola/about-us/"
+                        href="#"
                         className="dropdown-item"
                       >
                         About Us
@@ -218,7 +202,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Appointment"
-                        href="https://themes.hibootstrap.com/rola/appointment/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Appointment
@@ -229,7 +213,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Pricing"
-                        href="https://themes.hibootstrap.com/rola/pricing/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Pricing
@@ -240,7 +224,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Testimonials"
-                        href="https://themes.hibootstrap.com/rola/testimonials/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Testimonials
@@ -251,7 +235,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="FAQ’s"
-                        href="https://themes.hibootstrap.com/rola/faqs/"
+                        href="#"
                         className="dropdown-item"
                       >
                         FAQ’s
@@ -262,7 +246,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Privacy Policy"
-                        href="https://themes.hibootstrap.com/rola/privacy-policy/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Privacy Policy
@@ -273,7 +257,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Terms of Services"
-                        href="https://themes.hibootstrap.com/rola/terms-of-services/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Terms of Services
@@ -284,7 +268,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Coming Soon"
-                        href="https://themes.hibootstrap.com/rola/coming-soon/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Coming Soon
@@ -298,16 +282,12 @@ const HeaderBottom = () => {
                   <a
                     title="Shop"
                     href="#"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
                     className="dropdown-toggle nav-link"
                   >
                     Shop
                   </a>
                   <ul
                     className="dropdown-menu"
-                    aria-labelledby="menu-item-dropdown-1408"
                     role="menu"
                   >
                     <li
@@ -315,7 +295,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Shop"
-                        href="https://themes.hibootstrap.com/rola/shop/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Shop
@@ -329,7 +309,6 @@ const HeaderBottom = () => {
                       </a>
                       <ul
                         className="dropdown-menu"
-                        aria-labelledby="menu-item-dropdown-1408"
                         role="menu"
                       >
                         <li
@@ -337,7 +316,7 @@ const HeaderBottom = () => {
                         >
                           <a
                             title="Simple Product"
-                            href="https://themes.hibootstrap.com/rola/product/red-gold-headphones/"
+                            href="#"
                             className="dropdown-item"
                           >
                             Simple Product
@@ -348,7 +327,7 @@ const HeaderBottom = () => {
                         >
                           <a
                             title="Thumbs Product"
-                            href="https://themes.hibootstrap.com/rola/product/real-life-smartwatch/"
+                            href="#"
                             className="dropdown-item"
                           >
                             Thumbs Product
@@ -359,7 +338,7 @@ const HeaderBottom = () => {
                         >
                           <a
                             title="Slider Product"
-                            href="https://themes.hibootstrap.com/rola/product/note-book-mockup/"
+                            href="#"
                             className="dropdown-item"
                           >
                             Slider Product
@@ -372,7 +351,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Cart"
-                        href="https://themes.hibootstrap.com/rola/cart/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Cart
@@ -383,7 +362,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Checkout"
-                        href="https://themes.hibootstrap.com/rola/checkout/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Checkout
@@ -394,7 +373,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="My Account"
-                        href="https://themes.hibootstrap.com/rola/my-account/"
+                        href="#"
                         className="dropdown-item"
                       >
                         My Account
@@ -408,16 +387,12 @@ const HeaderBottom = () => {
                   <a
                     title="Blog"
                     href="#"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
                     className="dropdown-toggle nav-link"
                   >
                     Blog
                   </a>
                   <ul
                     className="dropdown-menu"
-                    aria-labelledby="menu-item-dropdown-678"
                     role="menu"
                   >
                     <li
@@ -425,7 +400,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Blog"
-                        href="https://themes.hibootstrap.com/rola/blog/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Blog
@@ -436,7 +411,7 @@ const HeaderBottom = () => {
                     >
                       <a
                         title="Single Blog"
-                        href="https://themes.hibootstrap.com/rola/new-technology-make-for-dental-operation/"
+                        href="#"
                         className="dropdown-item"
                       >
                         Single Blog
@@ -449,7 +424,7 @@ const HeaderBottom = () => {
                 >
                   <a
                     title="Contact Us"
-                    href="https://themes.hibootstrap.com/rola/contact-us/"
+                    href="#"
                     className="nav-link"
                   >
                     Contact Us
@@ -464,11 +439,10 @@ const HeaderBottom = () => {
                 </div>
                 <div className="option-item">
                   <a
-                    href="https://themes.hibootstrap.com/rola/appointment"
+                    href="#"
                     className="default-btn"
                   >
-                    {" "}
-                    Book Appointment{" "}
+                    Book Appointment
                   </a>
                 </div>
               </div>
@@ -495,11 +469,10 @@ const HeaderBottom = () => {
                 </div>
                 <div className="option-item">
                   <a
-                    href="https://themes.hibootstrap.com/rola/appointment"
+                    href="#"
                     className="default-btn"
                   >
-                    {" "}
-                    Book Appointment{" "}
+                    Book Appointment
                   </a>
                 </div>
               </div>
