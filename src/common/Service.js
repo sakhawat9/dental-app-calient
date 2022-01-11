@@ -8,6 +8,9 @@ const Service = ({ service }) => {
         <img src={img} alt="" />
         <h2>{name}</h2>
         <p>{description}</p>
+        <a href="" className="text-color">
+          Read More
+        </a>
       </div>
     </>
   );
