@@ -7,7 +7,7 @@ const HospitalArea = () => {
         <div className="grid items-center grid-cols-12 gap-4">
           <div className="lg:col-span-6 md:col-span-12">
             <div className="hospital-area__content">
-              <span className="sub-title">
+              <span className="text-white border-white subtitle bg-java-500">
                 CARE FOR EVERY PATIENT
               </span>
               <h3>
