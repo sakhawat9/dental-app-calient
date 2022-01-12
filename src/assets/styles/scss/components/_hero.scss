@@ -7,17 +7,6 @@
     }
   }
   &__main-banner-content {
-    &__subtitle {
-      display: inline-block;
-      color: var(--mainColor);
-      font-size: 14px;
-      font-weight: 600;
-      background-color: var(--whiteColor);
-      padding: 8px 20px;
-      border-radius: 50px;
-      border: 1px solid var(--mainColor);
-      margin-bottom: 25px;
-    }
     &__banner-btn {
       @apply flex;
       margin-top: 25px;

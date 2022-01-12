@@ -1,0 +1,8 @@
+.features {
+  &__wrapper {
+    @apply grid grid-cols-12 gap-4;
+    &__features-card {
+      @apply col-span-12 lg:col-span-4;
+    }
+  }
+}
