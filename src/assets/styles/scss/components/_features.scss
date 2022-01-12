@@ -1,8 +1,22 @@
 .features {
   &__wrapper {
-    @apply grid grid-cols-12 gap-4;
+    @apply grid grid-cols-12 gap-4 container mx-auto;
     &__features-card {
-      @apply col-span-12 lg:col-span-4;
+      @apply col-span-12 lg:col-span-4 flex justify-center text-white;
+      p {
+        margin-bottom: 15px;
+        line-height: 1.8;
+      }
+      &__single-card-1 {
+        background-color: #5ea89c;
+        padding: 30px;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        transition: var(--transition);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+      }
     }
   }
 }
