@@ -1,5 +1,6 @@
 import React from "react";
-
+import dentist02 from "../assets/images/dental02.png";
+import dentist01 from "../assets/images/dentist01.png";
 const HospitalArea = () => {
   return (
     <div className="hospital-area ptb-100">
@@ -35,7 +36,7 @@ const HospitalArea = () => {
                 <div className="col-span-12 lg:col-span-6 md:col-span-6">
                   <div className="hospital-area__single-card">
                     <div className="icon">
-                      <i className="flaticon-dental"></i>
+                    <img src={dentist01} className="w-12 h-14" alt="" />
                     </div>
                     <h3>
                       <a href="https://themes.hibootstrap.com/rola/service-post/quality-patients-care/">
@@ -49,13 +50,13 @@ const HospitalArea = () => {
                   </div>
                 </div>
                 <div className="col-span-12 lg:col-span-6 md:col-span-6">
-                  <div className="single-hospital-card">
+                  <div className="hospital-area__single-card">
                     <div className="icon">
-                      <i className="flaticon-dentist"></i>
+                      <img src={dentist02} className="w-12 h-14" alt="" />
                     </div>
                     <h3>
                       <a href="https://themes.hibootstrap.com/rola/service-post/experience-dentist/">
-                        Experience Dentist{" "}
+                        Experience Dentist
                       </a>
                     </h3>
                     <p>
