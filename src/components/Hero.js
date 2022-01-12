@@ -8,9 +8,7 @@ const Hero = () => {
       <div className="hero__wrapper">
         <div className="hero__wrapper__content">
           <div className="hero__main-banner-content ">
-            <span className="hero__main-banner-content__subtitle">
-              # KEEPING TEETH CLEAN
-            </span>
+            <span className="subtitle"># KEEPING TEETH CLEAN</span>
             <h1>
               Top <b>Personalized</b> Dental Care Services
             </h1>
