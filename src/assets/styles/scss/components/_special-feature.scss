@@ -1,40 +1,12 @@
-.section-title-warp {
-  margin-bottom: 45px;
-}
-
-.section-title-warp h2 {
-  font-size: 38px;
-  margin-bottom: 0;
-  line-height: 1.4;
-  font-weight: 400;
-}
-
-.section-title-warp h2 b {
-  font-weight: bold;
-}
-
-.section-warp-btn {
-  text-align: right;
-}
-
-.section-warp-btn .default-btn {
-  padding: 20px 45px;
-  font-size: var(--fontSize);
-}
-
 .section-title {
-  text-align: center;
+  @apply text-center;
   max-width: 665px;
   margin: 0 auto 45px;
-}
-
-.section-title h2 {
-  font-size: 38px;
-  margin-bottom: 0;
-  line-height: 1.4;
-  font-weight: 400;
-}
-
-.section-title h2 b {
-  font-weight: bold;
+  h2 {
+    @apply mb-0 leading-snug font-normal;
+    font-size: 38px;
+    b {
+      @apply font-bold;
+    }
+  }
 }

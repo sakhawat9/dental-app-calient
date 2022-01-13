@@ -1,0 +1,100 @@
+.core-features-area {
+  @apply relative;
+  background-color: #f7fafb;
+  z-index: 1;
+  &:before {
+    @apply absolute w-full bg-white left-0 right-0 bottom-0;
+    content: "";
+    height: 30%;
+    z-index: -1;
+  }
+}
+
+.single-core-features {
+  @apply bg-white p-6 mb-6;
+  border-radius: 5px;
+  transition: var(--transition);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.single-core-features .title {
+  @apply relative pt-4 pb-4 mb-4 pl-16;
+  i {
+    @apply inline-block h-14 w-14 bg-java-500 text-white text-center absolute left-0 top-1/2;
+    line-height: 65px;
+    font-size: 30px;
+    border-radius: 50px;
+    transform: translateY(-50%);
+  }
+  h3 {
+    @apply mb-0 font-semibold;
+    font-size: 22px;
+    a {
+      @apply text-black-500;
+    }
+  }
+}
+
+.single-core-features-box {
+  @apply bg-white pb-6 mb-6 border border-java-500;
+  border-radius: 5px;
+  transition: var(--transition);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+  &:hover {
+    transform: translateY(-10px);
+  }
+  h3 {
+    @apply mb-4 font-medium;
+    font-size: 22px;
+    a {
+      @apply text-black-500;
+      &:hover {
+        @apply text-java-500;
+      }
+    }
+  }
+}
+
+.single-core-features-box .icon {
+  margin-bottom: 22px;
+  i {
+    @apply inline-block h-20 w-20 bg-white text-java-500 text-center;
+    line-height: 90px;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+    font-size: 40px;
+    border-radius: 50%;
+    transition: var(--transition);
+  }
+}
+
+.single-features-box {
+  @apply bg-white border border-java-500 mb-6 p-8 text-center;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: var(--transition);
+  &:hover {
+    transform: translateY(-10px);
+  }
+  h3 {
+    @apply mb-0 font-medium;
+    font-size: 22px;
+    a {
+      @apply text-black-500;
+    }
+  }
+}
+
+.single-features-box .icon {
+  margin-bottom: 22px;
+  i {
+    @apply inline-block h-20 w-20 bg-white text-java-500 text-center;
+    line-height: 90px;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+    font-size: 40px;
+    border-radius: 50%;
+    transition: var(--transition);
+  }
+}
