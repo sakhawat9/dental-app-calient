@@ -18,7 +18,7 @@ const Services = () => {
           <h2>
             Enjoy Specialized Care Through Precision, Artistry, And Experience
           </h2>
-          <a href="#" className="default-btn">
+          <a href="#" className="default-btn mx-5">
             View All Services
           </a>
         </div>

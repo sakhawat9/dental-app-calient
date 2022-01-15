@@ -7,3 +7,14 @@
 .text-color {
   @apply text-java-500;
 }
+
+.service-style {
+  background-color: var(--whiteColor);
+  // box-shadow: 0 0 1.25rem rgb(108 118 134 / 10%);
+  // padding: 25px;
+  border-radius: 0 0 5px 5px px;
+  transition: var(--transition);
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
