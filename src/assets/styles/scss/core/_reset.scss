@@ -55,47 +55,31 @@ a {
 }
 
 .default-btn {
+  @apply text-center text-white text-base font-normal inline-flex items-center justify-center relative overflow-hidden border-0 bg-java-500;
   padding: 15px 30px;
-  text-align: center;
-  color: var(--whiteColor);
-  font-size: var(--fontSize);
-  font-weight: 500;
   transition: var(--transition);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
   border-radius: 5px;
   z-index: 0;
-  background-color: var(--mainColor);
   box-shadow: none;
-  overflow: hidden;
   white-space: nowrap;
   letter-spacing: 1px;
-  border: 0;
-}
-
-.default-btn:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 550px;
-  height: 550px;
-  margin: auto;
-  background: var(--optionalColor);
-  border-radius: 50%;
-  z-index: -1;
-  transform-origin: top center;
-  transform: translateX(-50%) translateY(-5%) scale(0.4);
-  transition: -webkit-transform 0.9s;
-  transition: transform 0.9s;
-  transition: transform 0.9s, -webkit-transform 0.9s;
-}
-
-.default-btn:hover {
-  color: var(--whiteColor);
+  &:before {
+    @apply absolute top-0 bottom-0 left-1/2 m-auto;
+    content: "";
+    width: 550px;
+    height: 550px;
+    background: var(--optionalColor);
+    border-radius: 50%;
+    z-index: -1;
+    transform-origin: top center;
+    transform: translateX(-50%) translateY(-5%) scale(0.4);
+    transition: -webkit-transform 0.9s;
+    transition: transform 0.9s;
+    transition: transform 0.9s, -webkit-transform 0.9s;
+  }
+  &:hover {
+    color: var(--whiteColor);
+  }
 }
 
 .default-btn:hover:before {
@@ -106,24 +90,53 @@ a {
   transform-origin: bottom center;
 }
 
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+.section-padding-t {
+  padding-top: 100px;
+}
+.section-padding-b {
+  padding-bottom: 75px;
+}
+
 .optional-btn {
-  display: inline-block;
-  background-color: transparent;
-  color: var(--mainColor);
+  @apply inline-block bg-transparent text-java-500 text-base border-2 font-medium border-java-500;
   padding: 14px 30px;
-  font-size: var(--fontSize);
-  font-weight: 500;
   transition: var(--transition);
   border-radius: 5px;
-  border: 2px solid var(--mainColor);
   &:hover {
-    background-color: var(--mainColor);
-    color: var(--whiteColor);
+    @apply bg-java-500 text-white;
   }
 }
 
 .subtitle {
-  @apply inline-block text-java-500 border py-2 px-5 border-java-500 font-semibold mb-6 bg-white;
+  @apply inline-block text-java-500 border py-2 px-5 uppercase border-java-500 font-semibold mb-6 bg-white;
   font-size: 14px;
   border-radius: 50px;
+}
+
+element.style {
+}
+.elementor a {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+.elementor *,
+.elementor :after,
+.elementor :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) {
+  .default-btn {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+  .optional-btn {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
 }

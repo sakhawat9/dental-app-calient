@@ -1,0 +1,74 @@
+.features {
+  @apply relative;
+  z-index: 1;
+  margin-top: -65px;
+  &__container {
+    @apply container;
+  }
+  &__wrapper {
+    @apply grid gap-4 grid-cols-12;
+    &__cards {
+      @apply lg:col-span-4 sm:col-span-6 col-span-12;
+      &__card {
+        @apply bg-java-600 p-8 mb-6 relative overflow-hidden;
+        border-radius: 5px;
+        transition: var(--transition);
+        z-index: 1;
+        p {
+          @apply text-white;
+        }
+        &:before {
+          content: "";
+          @apply absolute left-0 top-0 w-0 h-0 opacity-0 invisible bg-java-500;
+          transition: all 0.5s ease-in-out;
+          z-index: -1;
+          border-radius: 50%;
+          transform: scale(1.5);
+        }
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}
+
+.features__wrapper__cards__card.bg-E86548 {
+  background-color: #e86548;
+}
+
+.features__wrapper__cards__card.bg-456483 {
+  background-color: #456483;
+}
+
+.features__wrapper__cards__card .feature-title {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  display: flex;
+  h3 {
+    @apply text-2xl mb-0 font-semibold;
+    a {
+      @apply text-white;
+    }
+  }
+}
+
+.features__wrapper__cards__card .features-btn {
+  @apply text-white font-bold;
+}
+
+.features__wrapper__cards__card:hover::before {
+  @apply opacity-100 visible w-full h-full;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero {
+    &__wrapper {
+      &__content {
+        h1 {
+          font-size: 30px !important;
+        }
+      }
+    }
+  }
+}

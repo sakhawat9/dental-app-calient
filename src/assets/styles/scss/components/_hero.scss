@@ -1,42 +1,54 @@
 .hero {
+  @apply relative overflow-hidden lg:text-left text-center;
+  background-color: #f1f7f8;
+  z-index: 1;
+  &__container {
+    @apply pl-8 pr-0;
+  }
   &__wrapper {
     @apply grid grid-cols-12 gap-4;
-    padding-left: 30px;
     &__content {
-      @apply col-span-12 lg:col-span-6  flex items-center;
-    }
-  }
-  &__main-banner-content {
-    &__subtitle {
-      display: inline-block;
-      color: var(--mainColor);
-      font-size: 14px;
-      font-weight: 600;
-      background-color: var(--whiteColor);
-      padding: 8px 20px;
-      border-radius: 50px;
-      border: 1px solid var(--mainColor);
-      margin-bottom: 25px;
-    }
-    &__banner-btn {
-      @apply flex;
-      margin-top: 25px;
-      li {
-        margin-right: 15px;
+      padding: 145px 30px 210px 0;
+      h1 {
+        @apply mb-4 font-normal;
+        font-size: 75px !important;
+        b {
+          @apply font-bold;
+        }
+      }
+      p {
+        @apply font-semibold;
+        max-width: 720px;
+      }
+      .banner-btn {
+        @apply md:mt-5 mt-6 p-0 mb-0;
+        li {
+          @apply md:mb-2 inline-block mr-4;
+          &:last-child {
+            @apply mr-0;
+          }
+        }
       }
     }
-    h1 {
-      @apply text-black-500;
-      font-size: 75px !important;
-      margin-bottom: 15px;
-    }
-    p {
-      @apply font-semibold text-gray-600;
-      margin-bottom: 15px;
-    }
   }
-  &__banner-img {
-    @apply w-full h-full;
+  &__banner-image {
+    @apply bg-cover bg-no-repeat w-full h-full;
+    background-position: center top;
   }
-  background-color: #f1f7f8;
+}
+
+.main-banner-shape-1 {
+  @apply absolute;
+  bottom: 12%;
+  left: 38%;
+  transform: translateY(-12%) translateX(-38%);
+  z-index: -1;
+}
+
+.main-banner-shape-2 {
+  @apply absolute;
+  top: 10%;
+  left: 45%;
+  transform: translateY(-10%) translateX(-45%);
+  z-index: -1;
 }
