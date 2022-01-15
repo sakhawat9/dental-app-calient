@@ -14,7 +14,7 @@ const Services = () => {
     <div className="services section-padding">
       <div className="services__container">
         <span className="subtitle mb-5"> # OUR DENTAL SERVICES</span>
-        <div className="flex">
+        <div className="flex mb-5">
           <h2>
             Enjoy Specialized Care Through Precision, Artistry, And Experience
           </h2>
