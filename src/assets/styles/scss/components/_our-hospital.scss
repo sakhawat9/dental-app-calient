@@ -2,11 +2,25 @@
   &__container {
     @apply container grid grid-cols-12 gap-4;
   }
-  //   &__about-image {
-  //     @apply bg-cover bg-no-repeat w-full h-full;
-  //     background-position: center top;
-  //   }
+  &__about-image {
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
 }
+.about-content {
+  padding: 15px 0 100px 35px;
+}
+.about-content h3 {
+  font-size: 38px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
 .about-list {
   padding-left: 0;
   margin-bottom: 0;
