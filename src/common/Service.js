@@ -10,7 +10,7 @@ const Service = ({ service }) => {
         <div className="px-5">
           <h2>{name}</h2>
           <p>{description}</p>
-          <a href="#" className="text-color pt-5">
+          <a href="#" className="text-color">
             Read More
           </a>
         </div>
