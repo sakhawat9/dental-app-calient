@@ -1,0 +1,27 @@
+.our-hospital {
+  &__container {
+    @apply container grid grid-cols-12 gap-4;
+  }
+  //   &__about-image {
+  //     @apply bg-cover bg-no-repeat w-full h-full;
+  //     background-position: center top;
+  //   }
+}
+.about-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+// .about-list li {
+//   color: var(--mainColor);
+//   transition: var(--transition);
+// }
+.bx {
+  font-family: "boxicons" !important;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  display: inline-block;
+  text-transform: none;
+}
