@@ -15,7 +15,7 @@ const OurHospital = () => {
         <div className="lg:col-span-6 md:col-span-12">
           <div className="about-content">
             <span className="subtitle">
-              <i className="flaticon-teeth"></i> # ABOUT OUR HOSPITAL
+              {/* <i className="flaticon-teeth"></i>*/}# ABOUT OUR HOSPITAL
             </span>
             <h3 className="">
               Our Patients Are <b>Our Priority, We Offer</b> Quality Dental

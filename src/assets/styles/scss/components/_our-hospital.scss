@@ -2,14 +2,14 @@
   &__container {
     @apply container grid grid-cols-12 gap-4;
   }
-  &__about-image {
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-  }
+  // &__about-image {
+  //   background-position: center top;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   height: 100%;
+  //   width: 100%;
+  //   border-radius: 10px 10px 0 0;
+  // }
 }
 .about-content {
   padding: 15px 0 100px 35px;
