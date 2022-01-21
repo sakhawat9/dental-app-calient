@@ -140,12 +140,15 @@ element.style {
 .carousel .slick-arrow.slick-next:hover {
   @apply flex items-center justify-center w-10 h-10 rounded-full bg-java-600;
 }
+
 .carousel .slick-prev {
-  left: 0;
+  left: -10px;
 }
+
 .carousel .slick-next {
-  right: 0;
+  right: -10px;
 }
+
 .slick-prev::before,
 .slick-next::before {
   display: none;

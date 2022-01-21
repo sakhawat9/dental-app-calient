@@ -3,44 +3,44 @@
 import React from "react";
 import { AiOutlineStar } from "react-icons/ai";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
+import { IoMdQuote } from "react-icons/io";
 import Slider from "react-slick";
-
 
 const data = [
   {
-    img: "https://cdn.pixabay.com/photo/2022/01/18/16/49/town-6947538_960_720.jpg",
-    name: "Habib Sharabon",
-    description: "Habib vai is a bad learner",
+    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-3.jpg",
+    name: "Eachann Jhon",
+    title: "Founder",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-4.jpg",
+    name: "Smith Jorge",
+    title: "Designer",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-1.jpg",
+    name: "Sarah Taylor",
+    title: "Developer",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-2.jpg",
+    name: "Aiken Ward",
+    title: "Designer",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
     img: "https://cdn.pixabay.com/photo/2022/01/18/16/49/town-6947538_960_720.jpg",
     name: "Habib Sharabon",
-    description: "Habib vai is a bad learner",
-  },
-  {
-    img: "https://cdn.pixabay.com/photo/2022/01/18/16/49/town-6947538_960_720.jpg",
-    name: "Habib Sharabon",
-    description: "Habib vai is a bad learner",
-  },
-  {
-    img: "https://cdn.pixabay.com/photo/2022/01/18/16/49/town-6947538_960_720.jpg",
-    name: "Habib Sharabon",
-    description: "Habib vai is a bad learner",
-  },
-  {
-    img: "https://cdn.pixabay.com/photo/2022/01/18/16/49/town-6947538_960_720.jpg",
-    name: "Habib Sharabon",
-    description: "Habib vai is a bad learner",
-  },
-  {
-    img: "https://cdn.pixabay.com/photo/2022/01/18/16/49/town-6947538_960_720.jpg",
-    name: "Habib Sharabon",
-    description: "Habib vai is a bad learner",
-  },
-  {
-    img: "https://cdn.pixabay.com/photo/2022/01/18/16/49/town-6947538_960_720.jpg",
-    name: "Habib Sharabon",
-    description: "Habib vai is a bad learner",
+    title: "Developer",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
 ];
 
@@ -125,19 +125,38 @@ const Review = () => {
 
 const Card = ({ item }) => {
   return (
-    <div className="p-2 m-3 text-center shadow-lg">
-      <div className="inline-flex p-2 align-middle bg-white rounded-full shadow">
-        <img
-          width="100"
-          height="100"
-          className="object-cover rounded-full"
-          src={item.img}
-          alt={item.name}
-        />
-      </div>
-      <h3 className="pt-3 text-2xl">{item.name}</h3>
-      <p className="text-sm text-justify">{item.description}</p>
-      <ul className="flex mt-3">
+    // <div className="p-2 m-3 text-center shadow-lg">
+    //   <div className="inline-flex p-2 align-middle bg-white rounded-full shadow">
+    //     <img
+    //       width="100"
+    //       height="100"
+    //       className="object-cover rounded-full"
+    //       src={item.img}
+    //       alt={item.name}
+    //     />
+    //   </div>
+    //   <h3 className="pt-3 text-2xl">{item.name}</h3>
+    //   <p className="text-sm text-justify">{item.description}</p>
+    //   <ul className="flex mt-3">
+    //     <li>
+    //       <AiOutlineStar className="text-2xl text-yellow-400" />
+    //     </li>
+    //     <li>
+    //       <AiOutlineStar className="text-2xl text-yellow-400" />
+    //     </li>
+    //     <li>
+    //       <AiOutlineStar className="text-2xl text-yellow-400" />
+    //     </li>
+    //     <li>
+    //       <AiOutlineStar className="text-2xl text-yellow-400" />
+    //     </li>
+    //     <li>
+    //       <AiOutlineStar className="text-2xl text-yellow-400" />
+    //     </li>
+    //   </ul>
+    // </div>
+    <div className="single-review-item">
+      <ul className="single-review-item__ratting">
         <li>
           <AiOutlineStar className="text-2xl text-yellow-400" />
         </li>
@@ -154,6 +173,24 @@ const Card = ({ item }) => {
           <AiOutlineStar className="text-2xl text-yellow-400" />
         </li>
       </ul>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <div className="single-review-item__info">
+        <img src={item.img} alt="image" />
+        <h3>Eachann Jhon</h3>
+        <span>Founder</span>
+      </div>
+      <div className="single-review-item__quote-icon">
+        <ul>
+          <li>
+            <IoMdQuote />
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
