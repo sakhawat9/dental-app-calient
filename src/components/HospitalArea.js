@@ -4,10 +4,10 @@ import dentist02 from "../assets/images/dental02.png";
 import dentist01 from "../assets/images/dentist01.png";
 const HospitalArea = () => {
   return (
-    <div className="hospital-area ptb-100">
+    <div className="hospital-area section-padding">
       <div className="container">
         <div className="grid items-center grid-cols-12 gap-4">
-          <div className="lg:col-span-6 md:col-span-12">
+          <div className="lg:col-span-6 col-span-12">
             <div className="hospital-area__content">
               <span className="text-white border-white subtitle bg-java-500">
                 CARE FOR EVERY PATIENT
@@ -31,7 +31,7 @@ const HospitalArea = () => {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-6 md:col-span-12">
+          <div className="lg:col-span-6 col-span-12">
             <div className="hospital-area__right-content">
               <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-12 lg:col-span-6 md:col-span-6">

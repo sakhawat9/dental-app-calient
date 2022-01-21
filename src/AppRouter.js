@@ -10,7 +10,7 @@ const AppRouter = () => {
       <Header />
        <Switch>
         <Route exact path="/">
-          <Home></Home>
+          <Home />
         </Route>
         <Route path="/home">
           <Home />
