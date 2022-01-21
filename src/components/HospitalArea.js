@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import dentist02 from "../assets/images/dental02.png";
 import dentist01 from "../assets/images/dentist01.png";
@@ -22,7 +23,7 @@ const HospitalArea = () => {
               </p>
               <div className="hospital-area__content__btn">
                 <a
-                  href="https://themes.hibootstrap.com/rola/our-services/"
+                  href="#"
                   className="default-btn"
                 >
                   Read More
@@ -39,7 +40,7 @@ const HospitalArea = () => {
                     <img src={dentist01} className="w-12 h-14" alt="" />
                     </div>
                     <h3>
-                      <a href="https://themes.hibootstrap.com/rola/service-post/quality-patients-care/">
+                      <a href="#">
                         Quality Patients Care
                       </a>
                     </h3>
@@ -55,7 +56,7 @@ const HospitalArea = () => {
                       <img src={dentist02} className="w-12 h-14" alt="" />
                     </div>
                     <h3>
-                      <a href="https://themes.hibootstrap.com/rola/service-post/experience-dentist/">
+                      <a href="#">
                         Experience Dentist
                       </a>
                     </h3>
