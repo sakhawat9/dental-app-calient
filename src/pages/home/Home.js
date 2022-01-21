@@ -1,5 +1,6 @@
 import React from "react";
 import Features from "../../common/Features";
+import ExperiencedDentist from "../../components/ExperiencedDentist";
 import Hero from "../../components/Hero";
 import HospitalArea from "../../components/HospitalArea";
 import Services from "../../components/Services";
@@ -13,6 +14,7 @@ const Home = () => {
       <Services />
       <HospitalArea />
       <SpecialFeatures />
+      <ExperiencedDentist />
     </div>
   );
 };
