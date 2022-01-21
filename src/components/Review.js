@@ -125,60 +125,25 @@ const Review = () => {
 
 const Card = ({ item }) => {
   return (
-    // <div className="p-2 m-3 text-center shadow-lg">
-    //   <div className="inline-flex p-2 align-middle bg-white rounded-full shadow">
-    //     <img
-    //       width="100"
-    //       height="100"
-    //       className="object-cover rounded-full"
-    //       src={item.img}
-    //       alt={item.name}
-    //     />
-    //   </div>
-    //   <h3 className="pt-3 text-2xl">{item.name}</h3>
-    //   <p className="text-sm text-justify">{item.description}</p>
-    //   <ul className="flex mt-3">
-    //     <li>
-    //       <AiOutlineStar className="text-2xl text-yellow-400" />
-    //     </li>
-    //     <li>
-    //       <AiOutlineStar className="text-2xl text-yellow-400" />
-    //     </li>
-    //     <li>
-    //       <AiOutlineStar className="text-2xl text-yellow-400" />
-    //     </li>
-    //     <li>
-    //       <AiOutlineStar className="text-2xl text-yellow-400" />
-    //     </li>
-    //     <li>
-    //       <AiOutlineStar className="text-2xl text-yellow-400" />
-    //     </li>
-    //   </ul>
-    // </div>
     <div className="single-review-item">
       <ul className="single-review-item__ratting">
         <li>
-          <AiOutlineStar className="text-2xl text-yellow-400" />
+          <AiOutlineStar />
         </li>
         <li>
-          <AiOutlineStar className="text-2xl text-yellow-400" />
+          <AiOutlineStar />
         </li>
         <li>
-          <AiOutlineStar className="text-2xl text-yellow-400" />
+          <AiOutlineStar />
         </li>
         <li>
-          <AiOutlineStar className="text-2xl text-yellow-400" />
+          <AiOutlineStar />
         </li>
         <li>
-          <AiOutlineStar className="text-2xl text-yellow-400" />
+          <AiOutlineStar />
         </li>
       </ul>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
+      <p>{item.description}</p>
       <div className="single-review-item__info">
         <img src={item.img} alt="image" />
         <h3>Eachann Jhon</h3>

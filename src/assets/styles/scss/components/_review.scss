@@ -11,6 +11,11 @@
   }
   &__ratting {
     @apply flex mt-3 mb-3;
+    li {
+      svg {
+        @apply text-2xl text-yellow-400;
+      }
+    }
   }
   &__info {
     @apply relative mt-6;
