@@ -42,9 +42,7 @@
 }
 
 .features__wrapper__cards__card .feature-title {
-  padding-top: 15px;
-  padding-bottom: 30px;
-  display: flex;
+  @apply pt-4 pb-8 flex;
   h3 {
     @apply text-2xl mb-0 font-semibold;
     a {

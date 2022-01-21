@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import employee from "../assets/images/employee.png";
 
@@ -23,10 +24,10 @@ const Features = () => {
                 urna quisque id malesuada loremoi pellen demi text tesque.
               </p>
               <a
-                href="https://themes.hibootstrap.com/rola/service-post/certified-dentist/"
+                href="#"
                 className="features-btn"
               >
-                Read More{" "}
+                Read More
               </a>
             </div>
           </div>
@@ -35,7 +36,7 @@ const Features = () => {
               <div className="feature-title">
                 <img src={employee} alt="" className="w-8 h-8" />
                 <h3>
-                  <a href="https://themes.hibootstrap.com/rola/service-post/new-technology/">
+                  <a href="#">
                     New Technology
                   </a>
                 </h3>
@@ -45,10 +46,10 @@ const Features = () => {
                 urna quisque id malesuada loremoi pellen demi text tesque.
               </p>
               <a
-                href="https://themes.hibootstrap.com/rola/service-post/new-technology/"
+                href="#"
                 className="features-btn"
               >
-                Read More{" "}
+                Read More
               </a>
             </div>
           </div>
@@ -57,8 +58,8 @@ const Features = () => {
               <div className="feature-title">
                 <img src={employee} alt="" className="w-8 h-8" />
                 <h3>
-                  <a href="https://themes.hibootstrap.com/rola/service-post/accept-insurance/">
-                    Accept Insurance{" "}
+                  <a href="#">
+                    Accept Insurance
                   </a>
                 </h3>
               </div>
@@ -67,10 +68,10 @@ const Features = () => {
                 urna quisque id malesuada loremoi pellen demi text tesque.
               </p>
               <a
-                href="https://themes.hibootstrap.com/rola/service-post/accept-insurance/"
+                href="#"
                 className="features-btn"
               >
-                Read More{" "}
+                Read More
               </a>
             </div>
           </div>
