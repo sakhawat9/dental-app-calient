@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Comments from "../common/Comments";
 import PageBanner from "../common/PageBanner";
+import SinglePageDetails from "../components/SinglePageDetails";
 
 const SinglePage = () => {
   const { slug } = useParams();
@@ -19,7 +20,7 @@ const SinglePage = () => {
   return (
     <div>
       <PageBanner title={exactData[0]?.title} />
-      {exactData[0]?.title}
+      <SinglePageDetails />
       <Comments />
     </div>
   );

@@ -1,0 +1,223 @@
+.blog-details .article-image {
+  @apply relative mb-6;
+  img {
+    border-radius: 10px;
+  }
+}
+
+.blog-details .blog-details-content {
+  @apply bg-white border-t-0 overflow-hidden;
+}
+
+.blog-details .blog-details-content .entry-meta-info {
+  @apply mb-5;
+  span a {
+    @apply inline-block bg-java-500 text-white uppercase;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  ul {
+    li {
+      @apply relative inline-block mr-5 mb-0 uppercase;
+      color: var(--paragraphColor);
+      a {
+        @apply inline-block;
+        color: var(--paragraphColor);
+        &:hover {
+          @apply text-java-500;
+        }
+      }
+      i {
+        @apply text-java-500;
+        margin-right: 2px;
+      }
+      &:before {
+        content: "";
+        @apply absolute top-2;
+        right: -14px;
+        width: 1px;
+        height: 12px;
+        background: var(--paragraphColor);
+      }
+      &:last-child {
+        @apply mr-0;
+      }
+    }
+  }
+}
+
+.blog-details .blog-details-content .entry-meta-info ul li:last-child::before {
+  display: none;
+}
+
+.blog-sidebar {
+  padding-left: 15px;
+  select {
+    display: block !important;
+  }
+}
+
+.blog-sidebar.right-pos {
+  padding-left: 15px;
+}
+
+.blog-sidebar .widget {
+  @apply mb-8;
+  &:first-child {
+    @apply mt-0;
+  }
+  &:last-child {
+    @apply mb-0;
+  }
+  ul {
+    li {
+      @apply relative mb-3 overflow-hidden text-base font-bold pl-4;
+      color: #222222;
+      &:last-child {
+        @apply mb-0;
+      }
+      &:before {
+        @apply left-0 absolute bg-java-500;
+        height: 10px;
+        width: 10px;
+        content: "";
+        top: 5px;
+        border-radius: 50%;
+        transition: var(--transition);
+      }
+      a {
+        @apply relative inline-block;
+        color: #002345;
+        &:hover {
+          @apply text-java-500;
+        }
+      }
+      ul {
+        @apply pl-4;
+      }
+    }
+  }
+}
+
+.blog-sidebar .widget .widget-title {
+  @apply mb-5 relative capitalize;
+  font-size: 22px;
+}
+
+.blog-sidebar .widget_search .widget-title {
+  display: none;
+}
+
+.blog-sidebar .widget_search form {
+  @apply relative;
+  label {
+    @apply mb-0 block;
+  }
+}
+
+.blog-sidebar .widget_search form .search-field {
+  @apply w-full block;
+  background: #f7fafb;
+  border: 1px solid #dfedee;
+  height: 50px;
+  padding: 8px 15px;
+  outline: 0;
+  transition: var(--transition);
+  border-radius: 5px;
+  color: var(--paragraphColor);
+}
+
+.blog-sidebar .widget_search form .search-field:focus {
+  @apply bg-java-500;
+}
+
+.blog-sidebar .widget_search form .search-submit {
+  @apply border-0 bg-transparent text-java-500 w-10 h-10 absolute p-0 cursor-pointer text-xl;
+  right: 5px;
+  transition: var(--transition);
+  top: 5px;
+  border-radius: 5px;
+  i {
+    @apply absolute left-0 right-0;
+    top: 52%;
+    transform: translateY(-52%);
+  }
+}
+
+.blog-sidebar .widget_search form .search-submit:hover,
+.blog-sidebar .widget_search form .search-submit:focus {
+  @apply bg-java-500 text-white;
+}
+
+.blog-sidebar select {
+  @apply h-11 w-full;
+  border: 1px solid #eee;
+  font-size: 13.5px;
+  padding: 8px 15px;
+}
+
+.blog-sidebar p {
+  font-size: 14px;
+}
+
+.blog-sidebar ul.cus_widget_categories li {
+  @apply relative overflow-hidden mb-3 text-base font-semibold pl-0;
+  color: var(--paragraphColor);
+  border-top: 1px solid #dfedee;
+  border-bottom: 1px solid #dfedee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &:before {
+    display: none;
+  }
+  a {
+    color: var(--paragraphColor);
+    display: inline-block;
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .blog-sidebar {
+    @apply pl-0;
+  }
+
+  .blog-sidebar.right-pos {
+    @apply pl-0 mt-8;
+  }
+  .blog-sidebar .widget ul li {
+    font-size: 14px;
+  }
+  .blog-sidebar .widget .widget-title {
+    font-size: 17px;
+  }
+
+  table td,
+  table th {
+    padding: 7px 7px;
+  }
+
+  .post-password-form label input {
+    @apply ml-0;
+  }
+
+  .blog-details .blog-details-content ul li {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-sidebar {
+    @apply pl-0;
+  }
+  .blog-sidebar.right-pos {
+    @apply pl-0 mt-8;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-sidebar.right-pos {
+    @apply pl-0;
+  }
+}
