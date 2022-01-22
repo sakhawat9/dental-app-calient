@@ -36,6 +36,14 @@ h6 {
   font-size: 1.25rem !important;
 }
 
+p {
+  line-height: 1.8;
+  color: var(--paragraphColor);
+  font-weight: 400;
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+}
+
 .container {
   @apply px-4 mx-auto;
 }
@@ -111,25 +119,41 @@ a {
   }
 }
 
-.subtitle {
-  @apply inline-block text-java-500 border py-2 px-5 uppercase border-java-500 font-semibold mb-6 bg-white;
-  font-size: 14px;
-  border-radius: 50px;
-}
-
 element.style {
 }
 .elementor a {
-  -webkit-box-shadow: none;
   box-shadow: none;
   text-decoration: none;
 }
 .elementor *,
 .elementor :after,
 .elementor :before {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.carousel .slick-arrow.slick-prev,
+.carousel .slick-arrow.slick-next {
+  @apply flex items-center justify-center w-10 h-10 rounded-full bg-java-500;
+  z-index: 1;
+}
+.carousel .slick-arrow.slick-prev:hover,
+.carousel .slick-arrow.slick-next:hover {
+  @apply flex items-center justify-center w-10 h-10 rounded-full bg-java-600;
+}
+
+.carousel .slick-prev {
+  left: -10px;
+}
+
+.carousel .slick-next {
+  right: -10px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
+
 @media only screen and (max-width: 767px) {
   .default-btn {
     padding: 12px 20px;
