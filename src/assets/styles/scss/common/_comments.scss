@@ -1,0 +1,34 @@
+.comment {
+  @apply container flex justify-center items-center;
+  &__wrapper {
+    @apply w-full md:w-3/5;
+  }
+  input {
+    @apply w-full text-black-500;
+    background: #f7fafb;
+    border: 1px solid #dfedee;
+    border-radius: 5px;
+    padding: 0.625em 15px;
+    font-size: 16px;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--blackColor);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p.comment-form-author {
+  width: 50%;
+  float: left;
+  padding-right: 12px;
+}
+
+p.comment-form-email {
+  width: 50%;
+  float: left;
+  padding-left: 12px;
+}
