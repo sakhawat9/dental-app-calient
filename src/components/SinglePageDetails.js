@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
-const SinglePageDetails = () => {
+const SinglePageDetails = ({data}) => {
   return (
     <div className="container section-padding-t">
       <div className="grid gap-4 grid-cols-12">
@@ -10,7 +10,7 @@ const SinglePageDetails = () => {
           <div className="blog-details">
             <div className="article-image">
               <img
-                src="https://themes.hibootstrap.com/rola/wp-content/uploads/2021/08/blog5.jpg"
+                src={data[0]?.img}
                 alt="Hygiene for All Age to Make Smile Brighter"
               />
             </div>
@@ -28,24 +28,8 @@ const SinglePageDetails = () => {
                   <li>No Comments</li>
                 </ul>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. At vero eos et accusamus et iusto odio dignissimos
-                ducimus qui blanditiis.
+              <p className="text-justify">
+              {data[0]?.description}
               </p>
             </div>
           </div>

@@ -16,11 +16,11 @@ const SinglePage = () => {
   }, []);
 
   const exactData = blogDetails.filter((td) => td.slug === slug);
-  console.log("exactData", exactData);
+
   return (
     <div>
       <PageBanner title={exactData[0]?.title} />
-      <SinglePageDetails />
+      <SinglePageDetails data={exactData} />
       <Comments />
     </div>
   );
