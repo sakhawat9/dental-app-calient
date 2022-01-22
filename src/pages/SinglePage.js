@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Comments from "../common/Comments";
 import PageBanner from "../common/PageBanner";
 
 const SinglePage = () => {
@@ -19,6 +20,7 @@ const SinglePage = () => {
     <div>
       <PageBanner title={exactData[0]?.title} />
       {exactData[0]?.title}
+      <Comments />
     </div>
   );
 };
