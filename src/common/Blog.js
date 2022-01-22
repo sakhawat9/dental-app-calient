@@ -2,12 +2,13 @@
 import React from "react";
 
 const Blog = ({ blogData }) => {
-  const { img, title, subtitle } = blogData;
+  console.log(blogData);
+  const { img, title, subtitle, slug } = blogData;
   return (
     <div className="lg:col-span-4 md:col-span-6 col-span-12">
       <div className="single-blog-card">
         <div className="single-blog-card__image">
-          <a href="#">
+          <a href={`/singlePage/${slug}`}>
             <img src={img} alt={title} />
           </a>
         </div>
