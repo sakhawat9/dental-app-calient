@@ -168,8 +168,6 @@ const Footer = () => {
               </div>
               <form
                 className="mailchimp newsletter-form"
-                method="post"
-                novalidate="true"
               >
                 <input
                   type="email"
