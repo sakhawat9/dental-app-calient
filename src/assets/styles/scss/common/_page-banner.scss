@@ -1,0 +1,49 @@
+.page-banner {
+  @apply relative py-24;
+  background-color: #dfedee;
+  z-index: 1;
+  &__content h2 {
+    @apply mb-5;
+    font-size: 55px;
+  }
+  ul {
+    li {
+      @apply inline-block font-semibold ml-8 text-java-500 text-base relative;
+      &:before {
+        @apply absolute bg-black-500 w-2 h-2 rounded-full;
+        content: "";
+        left: -20px;
+        top: 10px;
+      }
+      span {
+        @apply text-java-500;
+      }
+      &:first-child {
+        @apply ml-0;
+      }
+      a {
+        @apply block text-black-500;
+      }
+    }
+  }
+}
+
+.page-banner__content .pages-list li:first-child::before {
+  display: none;
+}
+
+.page-banner-shape-1 {
+  @apply absolute;
+  bottom: 12%;
+  left: 38%;
+  transform: translateY(-12%) translateX(-38%);
+  z-index: -1;
+}
+
+.page-banner-shape-2 {
+  @apply absolute;
+  top: 25%;
+  right: 10%;
+  transform: translateY(-25%) translateX(-10%);
+  z-index: -1;
+}
