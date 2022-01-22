@@ -5,6 +5,7 @@ import HospitalArea from "../../components/HospitalArea";
 import Review from "../../components/Review";
 import Services from "../../components/Services";
 import SpecialFeatures from "../../components/SpecialFeatures";
+import Blogs from "../../components/Blogs";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <HospitalArea />
       <SpecialFeatures />
       <Review />
+      <Blogs />
     </div>
   );
 };
