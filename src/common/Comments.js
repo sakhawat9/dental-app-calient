@@ -2,21 +2,19 @@ import React from "react";
 
 const Comments = () => {
   return (
-    <div className="comment ">
+    <div className="comment">
       <div className="comment__wrapper">
         <div>
-          <h3 className="comment-reply-title">Leave a Reply</h3>
+          <h3 className="comment__reply-title">Leave a Reply</h3>
           <form className="comment-form">
-            <p className="comment-notes">
-              <span>
-                Your email address will not be published.
-              </span>
+            <p className="comment__notes">
+              <span>Your email address will not be published.</span>
               Required fields are marked <span className="required">*</span>
             </p>
             <p className="comment-form-comment">
               <label for="comment">Comment</label>
               <textarea
-              className="comment__textarea"
+                className="comment__textarea"
                 placeholder="Type Your Comment"
                 id="comment"
                 name="comment"
@@ -61,7 +59,7 @@ const Comments = () => {
             <p className="comment-form-url">
               <label for="url">Website</label>{" "}
               <input
-              className="w-full border border-gray-300"
+                className="w-full border border-gray-300"
                 placeholder="Website"
                 id="url"
                 name="url"
@@ -71,7 +69,7 @@ const Comments = () => {
                 maxlength="200"
               />
             </p>
-            <p className="comment-form-cookies-consent">
+            <p className="comment__cookies">
               <input
                 id="wp-comment-cookies-consent"
                 name="wp-comment-cookies-consent"
@@ -83,26 +81,8 @@ const Comments = () => {
                 time I comment.
               </label>
             </p>
-            <p className="form-submit">
-              <input
-                name="submit"
-                type="submit"
-                id="submit"
-                className="submit"
-                value="Post a Comment"
-              />
-              <input
-                type="hidden"
-                name="comment_post_ID"
-                value="328"
-                id="comment_post_ID"
-              />
-              <input
-                type="hidden"
-                name="comment_parent"
-                id="comment_parent"
-                value="0"
-              />
+            <p className="form-submit ">
+              <button className="default-btn mt-8">Post a comment</button>
             </p>
           </form>
         </div>
