@@ -138,21 +138,21 @@ const Card = ({ item }) => {
           <a href="#">{item.name}</a>
         </h3>
         <span>{item.expert}</span>
-      </div>
-      <div className="social-link">
-        <div className="share-link flex">
-          <a href="#" target="_blank">
-            <FaFacebookF />
-          </a>
-          <a href="#" target="_blank">
-            <FaTwitter />
-          </a>
-          <a href="#" target="_blank">
-            <FaLinkedinIn />
-          </a>
-          <a href="#" target="_blank">
-            <FaInstagram />
-          </a>
+        <div className="social-link">
+          <div className="share-link flex">
+            <a href="#" target="_blank">
+              <FaFacebookF />
+            </a>
+            <a href="#" target="_blank">
+              <FaTwitter />
+            </a>
+            <a href="#" target="_blank">
+              <FaLinkedinIn />
+            </a>
+            <a href="#" target="_blank">
+              <FaInstagram />
+            </a>
+          </div>
         </div>
       </div>
     </div>
