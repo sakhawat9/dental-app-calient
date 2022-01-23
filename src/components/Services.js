@@ -11,7 +11,7 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="section-padding ">
+    <div className="section-padding" style={{ backgroundColor: "#F7FAFB" }}>
       <div className="container">
         <div className="grid grid-cols-12 gap-4 items-center">
           <div className="lg:col-span-7 col-span-12">

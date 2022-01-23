@@ -2,7 +2,6 @@
 import React from "react";
 
 const Blog = ({ blogData }) => {
-  console.log(blogData);
   const { img, title, subtitle, slug } = blogData;
   return (
     <div className="lg:col-span-4 md:col-span-6 col-span-12">
