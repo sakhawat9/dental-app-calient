@@ -25,6 +25,9 @@ h2 {
 }
 h3 {
   font-size: 1.875rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 12px !important;
+  font-size: 24px !important;
 }
 h4 {
   font-size: 1.5rem !important;
@@ -41,6 +44,15 @@ h6 {
 }
 a {
   transition: 0.3s;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: var(--paragraphColor);
+  font-weight: 400;
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
 }
 
 .section-padding {
@@ -120,14 +132,12 @@ a {
 element.style {
 }
 .elementor a {
-  -webkit-box-shadow: none;
   box-shadow: none;
   text-decoration: none;
 }
 .elementor *,
 .elementor :after,
 .elementor :before {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 @media only screen and (max-width: 767px) {
