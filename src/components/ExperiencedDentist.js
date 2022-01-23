@@ -1,8 +1,15 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 // import { AiOutlineStar } from "react-icons/ai";
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
-// import { IoMdQuote } from "react-icons/io";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaLongArrowAltLeft,
+  FaLongArrowAltRight,
+  FaTwitter,
+} from "react-icons/fa";
 import Slider from "react-slick";
 
 const doctorsData = [
@@ -106,7 +113,10 @@ const ExperiencedDentist = () => {
           <p></p>
         </div>
       </div>
-      <div className="container mx-auto carousel section-padding">
+      <div
+        className="container mx-auto carousel section-padding"
+        style={{ paddingTop: "0px" }}
+      >
         <Slider {...carouselProperties}>
           {doctorsData.map((item, index) => (
             <Card key={index} item={item} />
@@ -119,22 +129,32 @@ const ExperiencedDentist = () => {
 
 const Card = ({ item }) => {
   return (
-    // <div className="single-review-item">
-    //   <div className="single-review-item__info">
-    //     <img src={item.img} alt="image" />
-    //     <h3>Eachann Jhon</h3>
-    //     <span>Founder</span>
-    //   </div>
-    //   <div className="single-review-item__quote-icon">
-    //     <ul>
-    //       <li>
-    //         <IoMdQuote />
-    //       </li>
-    //     </ul>
-    //   </div>
-    // </div>
-    <div className="container">
-      <img src={item.img} alt="" />
+    <div className="container doctor-card">
+      <div className="doctor-image">
+        <img src={item.img} alt="" />
+      </div>
+      <div className="doctor-content">
+        <h3>
+          <a href="#">{item.name}</a>
+        </h3>
+        <span>{item.expert}</span>
+      </div>
+      <div className="social-link">
+        <div className="share-link flex">
+          <a href="#" target="_blank">
+            <FaFacebookF />
+          </a>
+          <a href="#" target="_blank">
+            <FaTwitter />
+          </a>
+          <a href="#" target="_blank">
+            <FaLinkedinIn />
+          </a>
+          <a href="#" target="_blank">
+            <FaInstagram />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
