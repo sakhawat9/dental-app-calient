@@ -1,0 +1,60 @@
+.our-hospital {
+  &__container {
+    @apply container grid grid-cols-12 gap-4;
+  }
+  &__about-image {
+    // background-position: center top;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+}
+.about-content {
+  padding: 15px 0 100px 35px;
+}
+.about-content h3 {
+  font-size: 38px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.about-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.about-list li {
+  list-style-type: none;
+  background-color: #f7fafb;
+  color: var(--paragraphColor);
+  margin-bottom: 18px;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: var(--transition);
+  border-radius: 5px;
+}
+.about-list li:hover {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+// ul {
+//   display: block;
+//   list-style-type: disc;
+//   margin-block-start: 1em;
+//   margin-block-end: 1em;
+//   margin-inline-start: 0px;
+//   margin-inline-end: 0px;
+//   padding-inline-start: 40px;
+// }
+// .bx {
+//   font-family: "boxicons" !important;
+//   font-weight: normal;
+//   font-style: normal;
+//   font-variant: normal;
+//   line-height: 1;
+//   display: inline-block;
+//   text-transform: none;
+// }
