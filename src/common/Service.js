@@ -2,27 +2,27 @@
 import React from "react";
 
 const Service = ({ service }) => {
-  const { name, description, img } = service;
+  const { name, subtitle, img, slug } = service;
   return (
     <>
       <div className="lg:col-span-3 col-span-6">
         <div className="single-services">
           <div className="services-image">
-            <a href="#">
+            <a href={`serviceDetails/${slug}`}>
               <img src={img} alt={name} />
             </a>
             <div className="icon">
-              <a href="#">
+              <a href={`serviceDetails/${slug}`}>
                 <img src={img} alt={name} />
               </a>
             </div>
           </div>
           <div className="services-content">
             <h3>
-              <a href="#">{name}</a>
+              <a href={`serviceDetails/${slug}`}>{name}</a>
             </h3>
-            <p className="text-justify">{description}</p>
-            <a href="#" className="services-btn">
+            <p className="text-justify">{subtitle}</p>
+            <a href={`serviceDetails/${slug}`} className="services-btn">
               Read More
             </a>
           </div>

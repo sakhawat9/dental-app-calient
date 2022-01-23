@@ -6,7 +6,6 @@ import SinglePageDetails from "../components/SinglePageDetails";
 
 const SinglePage = () => {
   const { slug } = useParams();
-  console.log(slug);
   const [blogDetails, setBlogDetails] = useState([]);
 
   useEffect(() => {
