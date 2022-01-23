@@ -4,6 +4,7 @@ import Footer from "./common/Footer";
 import Header from "./common/Header/Header";
 import Home from "./pages/home/Home";
 import SinglePage from "./pages/SinglePage";
+import SingleService from "./pages/SingleService";
 
 const AppRouter = () => {
   return (
@@ -18,6 +19,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/singlePage/:slug">
           <SinglePage />
+        </Route>
+        <Route path="/serviceDetails/:slug">
+          <SingleService />
         </Route>
       </Switch>
       <Footer />

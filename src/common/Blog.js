@@ -22,9 +22,9 @@ const Blog = ({ blogData }) => {
             </li>
           </ul>
           <h3>
-            <a href="#">{title}</a>
+            <a href={`/singlePage/${slug}`}>{title}</a>
           </h3>
-          <a href="#" className="blog-btn">
+          <a href={`/singlePage/${slug}`} className="blog-btn">
             Read More
           </a>
         </div>
