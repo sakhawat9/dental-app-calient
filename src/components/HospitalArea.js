@@ -1,12 +1,13 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import dentist02 from "../assets/images/dental02.png";
 import dentist01 from "../assets/images/dentist01.png";
 const HospitalArea = () => {
   return (
-    <div className="hospital-area ptb-100">
+    <div className="hospital-area section-padding">
       <div className="container">
         <div className="grid items-center grid-cols-12 gap-4">
-          <div className="lg:col-span-6 md:col-span-12">
+          <div className="lg:col-span-6 col-span-12">
             <div className="hospital-area__content">
               <span className="text-white border-white subtitle bg-java-500">
                 CARE FOR EVERY PATIENT
@@ -22,7 +23,7 @@ const HospitalArea = () => {
               </p>
               <div className="hospital-area__content__btn">
                 <a
-                  href="https://themes.hibootstrap.com/rola/our-services/"
+                  href="#"
                   className="default-btn"
                 >
                   Read More
@@ -30,7 +31,7 @@ const HospitalArea = () => {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-6 md:col-span-12">
+          <div className="lg:col-span-6 col-span-12">
             <div className="hospital-area__right-content">
               <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-12 lg:col-span-6 md:col-span-6">
@@ -39,7 +40,7 @@ const HospitalArea = () => {
                     <img src={dentist01} className="w-12 h-14" alt="" />
                     </div>
                     <h3>
-                      <a href="https://themes.hibootstrap.com/rola/service-post/quality-patients-care/">
+                      <a href="#">
                         Quality Patients Care
                       </a>
                     </h3>
@@ -55,7 +56,7 @@ const HospitalArea = () => {
                       <img src={dentist02} className="w-12 h-14" alt="" />
                     </div>
                     <h3>
-                      <a href="https://themes.hibootstrap.com/rola/service-post/experience-dentist/">
+                      <a href="#">
                         Experience Dentist
                       </a>
                     </h3>
@@ -78,7 +79,7 @@ const HospitalArea = () => {
                         <circle className="circle-chart__background"></circle>
                         <circle
                           className="circle-chart__circle success-stroke"
-                          stroke-dasharray="70,100"
+                          strokeDasharray="70,100"
                         ></circle>
                         <g className="circle-chart__info">
                           <text className="circle-chart__percent">70%</text>
@@ -103,7 +104,7 @@ const HospitalArea = () => {
                         <circle className="circle-chart__background"></circle>
                         <circle
                           className="circle-chart__circle success-stroke"
-                          stroke-dasharray="80,100"
+                          strokeDasharray="80,100"
                         ></circle>
                         <g className="circle-chart__info">
                           <text className="circle-chart__percent">80%</text>
@@ -132,7 +133,7 @@ const HospitalArea = () => {
                         <circle className="circle-chart__background"></circle>
                         <circle
                           className="circle-chart__circle success-stroke"
-                          stroke-dasharray="50,100"
+                          strokeDasharray="50,100"
                         ></circle>
                         <g className="circle-chart__info">
                           <text className="circle-chart__percent">50%</text>

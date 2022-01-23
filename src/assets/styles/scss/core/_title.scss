@@ -1,10 +1,5 @@
-.title{
-    @apply flex flex-col text-center w-full mb-12;
-    
-    &__subtitle{
-        @apply text-xs tracking-widest font-medium mb-1;
-    }
-    p {
-        @apply lg:w-2/6 mx-auto;
-    }
+.subtitle {
+  @apply inline-block text-java-500 border py-2 px-5 uppercase border-java-500 font-semibold mb-6 bg-white;
+  font-size: 14px;
+  border-radius: 50px;
 }

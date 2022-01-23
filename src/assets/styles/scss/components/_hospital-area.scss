@@ -2,12 +2,12 @@
   @apply relative;
   z-index: 1;
   &:before {
-    @apply absolute left-0 top-0 h-full w-1/2 bg-java-500;
+    @apply absolute left-0 top-0 h-full md:w-1/2 w-full bg-java-500;
     content: "";
     z-index: -1;
   }
   &:after {
-    @apply absolute right-0 top-0 h-full w-1/2 bg-white;
+    @apply absolute right-0 top-0 h-full md:w-1/2 w-0 bg-white;
     content: "";
     z-index: -1;
   }
@@ -29,7 +29,7 @@
         background-color: var(--whiteColor);
         color: var(--mainColor) !important;
         &:before {
-          background-color: var(--blackColor);
+          @apply bg-black-500;
         }
         &:hover {
           color: var(--whiteColor) !important;
@@ -38,42 +38,23 @@
     }
   }
   &__right-content {
-    @apply ml-12;
+    @apply md:ml-12 ml-0;
   }
   &__single-card {
     margin-bottom: 25px;
     h3 {
+      @apply mb-3;
       font-size: 22px;
-      margin-bottom: 12px;
       a {
-        color: var(--blackColor);
+        @apply text-white md:text-black-500;
       }
     }
-    .icon {
-      margin-bottom: 12px;
-      i {
-        font-size: 55px;
-        color: var(--mainColor);
-        line-height: 1;
-        &:before {
-          font-family: flaticon !important;
-          font-style: normal;
-          font-weight: normal !important;
-          font-variant: normal;
-          text-transform: none;
-          line-height: 1;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-        }
-      }
+    p {
+      @apply text-white md:text-black-500;
     }
   }
 }
-// .single-hospital-card .icon i {
-//   font-size: 55px;
-//   color: var(--mainColor);
-//   line-height: 1;
-// }
+
 .single-hospital-box {
   @apply mt-4 text-center;
   span {
