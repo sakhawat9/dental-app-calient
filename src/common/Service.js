@@ -5,14 +5,27 @@ const Service = ({ service }) => {
   const { name, description, img } = service;
   return (
     <>
-      <div className="md:col-span-3 col-span-12 shadow-2xl py-5 rounded-md  service-style">
-        <img className="rounded-t-lg" src={img} alt="" />
-        <div className="px-5">
-          <h2>{name}</h2>
-          <p>{description}</p>
-          <a href="#" className="text-color pt-5">
-            Read More
-          </a>
+      <div className="lg:col-span-3 col-span-6">
+        <div className="single-services">
+          <div className="services-image">
+            <a href="#">
+              <img src={img} alt={name} />
+            </a>
+            <div className="icon">
+              <a href="#">
+                <img src={img} alt={name} />
+              </a>
+            </div>
+          </div>
+          <div className="services-content">
+            <h3>
+              <a href="#">{name}</a>
+            </h3>
+            <p className="text-justify">{description}</p>
+            <a href="#" className="services-btn">
+              Read More
+            </a>
+          </div>
         </div>
       </div>
     </>
