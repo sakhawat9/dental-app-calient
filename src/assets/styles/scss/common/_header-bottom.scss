@@ -635,7 +635,8 @@
 }
 
 .navbar-nav .nav-item:hover .dropdown-menu {
-  @apply visible opacity-100 mt-0;
+  @apply visible opacity-100;
+  margin-top: -20px;
 }
 
 .others-options {

@@ -52,31 +52,31 @@ const Footer = () => {
               <ul id="menu-quick-links" className="menu">
                 <li
                   id="menu-item-659"
-                  className="menu-item  menu-item-object-page menu-item-659"
+                  className="menu-item  menu-item-659"
                 >
                   <a href="#">About Us</a>
                 </li>
                 <li
                   id="menu-item-662"
-                  className="menu-item  menu-item-object-page menu-item-662"
+                  className="menu-item  menu-item-662"
                 >
                   <a href="#">Our Services</a>
                 </li>
                 <li
                   id="menu-item-677"
-                  className="menu-item  menu-item-object-page menu-item-677"
+                  className="menu-item  menu-item-677"
                 >
                   <a href="#">Appointment</a>
                 </li>
                 <li
                   id="menu-item-676"
-                  className="menu-item  menu-item-object-page menu-item-676"
+                  className="menu-item  menu-item-676"
                 >
                   <a href="#">Privacy Policy</a>
                 </li>
                 <li
                   id="menu-item-663"
-                  className="menu-item  menu-item-object-page menu-item-663"
+                  className="menu-item  menu-item-663"
                 >
                   <a href="#">Contact Us</a>
                 </li>
@@ -126,31 +126,31 @@ const Footer = () => {
               <ul id="menu-support" className="menu">
                 <li
                   id="menu-item-1132"
-                  className="menu-item  menu-item-object-page menu-item-1132"
+                  className="menu-item  menu-item-1132"
                 >
                   <a href="#">Our Dentist</a>
                 </li>
                 <li
                   id="menu-item-1129"
-                  className="menu-item  menu-item-object-page menu-item-1129"
+                  className="menu-item  menu-item-1129"
                 >
                   <a href="#">Terms of Services</a>
                 </li>
                 <li
                   id="menu-item-1128"
-                  className="menu-item  menu-item-object-page menu-item-1128"
+                  className="menu-item  menu-item-1128"
                 >
                   <a href="#">Privacy Policy</a>
                 </li>
                 <li
                   id="menu-item-1131"
-                  className="menu-item  menu-item-object-page menu-item-1131"
+                  className="menu-item  menu-item-1131"
                 >
                   <a href="#">Our Pricing</a>
                 </li>
                 <li
                   id="menu-item-1133"
-                  className="menu-item  menu-item-object-page menu-item-1133"
+                  className="menu-item  menu-item-1133"
                 >
                   <a href="#">Testimonials</a>
                 </li>
@@ -168,8 +168,6 @@ const Footer = () => {
               </div>
               <form
                 className="mailchimp newsletter-form"
-                method="post"
-                novalidate="true"
               >
                 <input
                   type="email"
