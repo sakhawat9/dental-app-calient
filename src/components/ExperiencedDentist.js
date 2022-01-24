@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
@@ -8,7 +9,7 @@ import {
   FaLinkedinIn,
   FaLongArrowAltLeft,
   FaLongArrowAltRight,
-  FaTwitter,
+  FaTwitter
 } from "react-icons/fa";
 import Slider from "react-slick";
 
@@ -110,7 +111,6 @@ const ExperiencedDentist = () => {
           <h2>
             Top Dentist For <b>Specialized And Experienced</b> Dentistry
           </h2>
-          <p></p>
         </div>
       </div>
       <div
@@ -139,17 +139,17 @@ const Card = ({ item }) => {
         </h3>
         <span>{item.expert}</span>
         <div className="social-link">
-          <div className="share-link flex">
-            <a href="#" target="_blank">
+          <div className="flex share-link">
+            <a href="https://www.facebook.com" target="_blank">
               <FaFacebookF />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://www.linkedin.com" target="_blank">
               <FaTwitter />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://twitter.com" target="_blank">
               <FaLinkedinIn />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com" target="_blank">
               <FaInstagram />
             </a>
           </div>

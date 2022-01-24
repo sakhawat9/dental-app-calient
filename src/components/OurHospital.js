@@ -62,26 +62,26 @@ const OurHospital = () => {
           </div>
         </div>
       </div>
-      <div class="overview-area py-24">
-        <div class="container">
-          <div class="grid grid-cols-12 gap-4 items-center">
-            <div class="lg:col-span-7 col-span-12">
-              <div class="overview-area__content">
+      <div className="overview-area py-24">
+        <div className="container">
+          <div className="grid grid-cols-12 gap-4 items-center">
+            <div className="lg:col-span-7 col-span-12">
+              <div className="overview-area__content">
                 <h3>
                   Nervous Troubled Attractive Staring Right Anxiously!{" "}
                   <b>Make An Appointment</b>
                 </h3>
               </div>
             </div>
-            <div class="lg:col-span-5 col-span-12">
-              <ul class="overview-area__list text-end">
+            <div className="lg:col-span-5 col-span-12">
+              <ul className="overview-area__list text-end">
                 <li>
-                  <a href="#" class="default-btn">
+                  <a href="#" className="default-btn">
                     Book Appointment
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="optional-btn">
+                  <a href="#" className="optional-btn">
                     Get Free Consulting
                   </a>
                 </li>

@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 import Service from "../common/Service";
 
 const Services = () => {
-  const [services, setServices] = useState([]);
+  const [serviceData, setServiceData] = useState([]);
 
   useEffect(() => {
     fetch("/services.json")
       .then((res) => res.json())
-      .then((data) => setServices(data));
+      .then((data) => setServiceData(data));
   }, []);
 
   return (
@@ -26,10 +26,7 @@ const Services = () => {
           </div>
           <div className="hidden lg:col-span-5 lg:block">
             <div className="flex justify-end">
-              <a
-                href="#"
-                className="default-btn"
-              >
+              <a href="#" className="default-btn">
                 View All Services
               </a>
             </div>
@@ -39,8 +36,8 @@ const Services = () => {
 
       <div className="container">
         <div className="grid grid-cols-12 gap-4">
-          {services.slice(0, 4).map((service) => (
-            <Service key={service.id} service={service}></Service>
+          {serviceData.slice(0, 4).map((data) => (
+            <Service key={data.id} data={data} />
           ))}
         </div>
       </div>
