@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
-import Service from "../common/Service";
+import ServiceCard from "../common/ServiceCard";
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -40,7 +40,7 @@ const Services = () => {
       <div className="container">
         <div className="grid grid-cols-12 gap-4">
           {services.slice(0, 4).map((service) => (
-            <Service key={service.id} service={service}></Service>
+            <ServiceCard key={service.id} service={service} />
           ))}
         </div>
       </div>
