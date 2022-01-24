@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
-const Service = ({ service }) => {
-  const { name, subtitle, img, slug } = service;
+const Service = ({ data }) => {
+  const { name, subtitle, img, slug } = data;
   return (
     <>
       <div className="col-span-6 lg:col-span-3">
