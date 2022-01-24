@@ -5,7 +5,7 @@ const Service = ({ service }) => {
   const { name, subtitle, img, slug } = service;
   return (
     <>
-      <div className="lg:col-span-3 col-span-6">
+      <div className="col-span-6 lg:col-span-3">
         <div className="single-services">
           <div className="services-image">
             <a href={`serviceDetails/${slug}`}>
@@ -21,7 +21,7 @@ const Service = ({ service }) => {
             <h3>
               <a href={`serviceDetails/${slug}`}>{name}</a>
             </h3>
-            <p className="text-justify">{subtitle}</p>
+            <p>{subtitle}</p>
             <a href={`serviceDetails/${slug}`} className="services-btn">
               Read More
             </a>

@@ -1,10 +1,12 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { AiOutlineCheck } from "react-icons/ai";
 
 const OurHospital = () => {
   return (
     <div className="our-hospital">
       <div className="our-hospital__container">
-        <div className="lg:col-span-6 md:col-span-12">
+        <div className="col-span-12 lg:col-span-6">
           <div className="our-hospital__about-image">
             <img
               src="https://themes.hibootstrap.com/rola/wp-content/uploads/2021/10/about-1.jpg"
@@ -12,12 +14,10 @@ const OurHospital = () => {
             />
           </div>
         </div>
-        <div className="lg:col-span-6 md:col-span-12">
-          <div className="about-content">
-            <span className="subtitle">
-              {/* <i className="flaticon-teeth"></i>*/}# ABOUT OUR HOSPITAL
-            </span>
-            <h3 className="">
+        <div className="col-span-12 lg:col-span-6">
+          <div className="our-hospital__about-content">
+            <span className="subtitle">ABOUT OUR HOSPITAL</span>
+            <h3>
               Our Patients Are <b>Our Priority, We Offer</b> Quality Dental
               Services
             </h3>
@@ -27,20 +27,65 @@ const OurHospital = () => {
               enim ad minim veniam quis nostrud exercitation ullamco laboris.
             </p>
             <div className="grid grid-cols-12 gap-4">
-              <div className="lg:col-span-6 md:col-span-12">
-                <ul className="about-list">
-                  <li>Complete Crown</li>
-                  <li>Dental Implants</li>
-                  <li>Dental X-Ray</li>
+              <div className="col-span-12 lg:col-span-6">
+                <ul className="our-hospital__about-list">
+                  <li>
+                    <AiOutlineCheck /> Complete Crown
+                  </li>
+                  <li>
+                    <AiOutlineCheck />
+                    Dental Implants
+                  </li>
+                  <li>
+                    <AiOutlineCheck />
+                    Dental X-Ray
+                  </li>
                 </ul>
               </div>
-              <div className="lg:col-span-6 md:col-span-12">
-                <ul className="about-list">
-                  <li>Cosmetic Filling</li>
-                  <li>Teeth Whitening</li>
-                  <li>Root Canal</li>
+              <div className="col-span-12 lg:col-span-6">
+                <ul className="our-hospital__about-list">
+                  <li>
+                    <AiOutlineCheck />
+                    Cosmetic Filling
+                  </li>
+                  <li>
+                    <AiOutlineCheck />
+                    Teeth Whitening
+                  </li>
+                  <li>
+                    <AiOutlineCheck />
+                    Root Canal
+                  </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overview-area py-24">
+        <div class="container">
+          <div class="grid grid-cols-12 gap-4 items-center">
+            <div class="lg:col-span-7 col-span-12">
+              <div class="overview-area__content">
+                <h3>
+                  Nervous Troubled Attractive Staring Right Anxiously!{" "}
+                  <b>Make An Appointment</b>
+                </h3>
+              </div>
+            </div>
+            <div class="lg:col-span-5 col-span-12">
+              <ul class="overview-area__list text-end">
+                <li>
+                  <a href="#" class="default-btn">
+                    Book Appointment
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="optional-btn">
+                    Get Free Consulting
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

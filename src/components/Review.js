@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/no-redundant-roles */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
@@ -90,8 +91,8 @@ const Review = () => {
   return (
     <>
       <div className="container">
-        <div className="grid gap-4 grid-cols-12 items-center">
-          <div className="lg:col-span-7 col-span-12">
+        <div className="grid items-center grid-cols-12 gap-4">
+          <div className="col-span-12 lg:col-span-7">
             <div className="section-title-warp">
               <span className="subtitle"># OUR PATIENTS REVIEW</span>
               <h2>
@@ -100,10 +101,10 @@ const Review = () => {
               </h2>
             </div>
           </div>
-          <div className="lg:col-span-5 hidden lg:block">
+          <div className="hidden lg:col-span-5 lg:block">
             <div className="flex justify-end">
               <a
-                href="https://themes.hibootstrap.com/rola/testimonials/"
+                href="#"
                 className="default-btn"
               >
                 View All Review
