@@ -6,7 +6,6 @@ import SinglePageDetails from "../components/SinglePageDetails";
 
 const SinglePage = () => {
   const { slug } = useParams();
-  console.log(slug);
   const [blogDetails, setBlogDetails] = useState([]);
 
   useEffect(() => {
@@ -16,11 +15,11 @@ const SinglePage = () => {
   }, []);
 
   const exactData = blogDetails.filter((td) => td.slug === slug);
-  console.log("exactData", exactData);
+
   return (
     <div>
       <PageBanner title={exactData[0]?.title} />
-      <SinglePageDetails />
+      <SinglePageDetails data={exactData} />
       <Comments />
     </div>
   );

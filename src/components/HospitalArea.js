@@ -79,7 +79,7 @@ const HospitalArea = () => {
                         <circle className="circle-chart__background"></circle>
                         <circle
                           className="circle-chart__circle success-stroke"
-                          stroke-dasharray="70,100"
+                          strokeDasharray="70,100"
                         ></circle>
                         <g className="circle-chart__info">
                           <text className="circle-chart__percent">70%</text>
@@ -104,7 +104,7 @@ const HospitalArea = () => {
                         <circle className="circle-chart__background"></circle>
                         <circle
                           className="circle-chart__circle success-stroke"
-                          stroke-dasharray="80,100"
+                          strokeDasharray="80,100"
                         ></circle>
                         <g className="circle-chart__info">
                           <text className="circle-chart__percent">80%</text>
@@ -133,7 +133,7 @@ const HospitalArea = () => {
                         <circle className="circle-chart__background"></circle>
                         <circle
                           className="circle-chart__circle success-stroke"
-                          stroke-dasharray="50,100"
+                          strokeDasharray="50,100"
                         ></circle>
                         <g className="circle-chart__info">
                           <text className="circle-chart__percent">50%</text>

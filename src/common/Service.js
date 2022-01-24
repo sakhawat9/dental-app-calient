@@ -2,17 +2,30 @@
 import React from "react";
 
 const Service = ({ service }) => {
-  const { name, description, img } = service;
+  const { name, subtitle, img, slug } = service;
   return (
     <>
-      <div className="md:col-span-3 col-span-12 shadow-2xl py-5 rounded-md  service-style">
-        <img className="rounded-t-lg" src={img} alt="" />
-        <div className="px-5">
-          <h2>{name}</h2>
-          <p>{description}</p>
-          <a href="#" className="text-color pt-5">
-            Read More
-          </a>
+      <div className="col-span-6 lg:col-span-3">
+        <div className="single-services">
+          <div className="services-image">
+            <a href={`serviceDetails/${slug}`}>
+              <img src={img} alt={name} />
+            </a>
+            <div className="icon">
+              <a href={`serviceDetails/${slug}`}>
+                <img src={img} alt={name} />
+              </a>
+            </div>
+          </div>
+          <div className="services-content">
+            <h3>
+              <a href={`serviceDetails/${slug}`}>{name}</a>
+            </h3>
+            <p>{subtitle}</p>
+            <a href={`serviceDetails/${slug}`} className="services-btn">
+              Read More
+            </a>
+          </div>
         </div>
       </div>
     </>

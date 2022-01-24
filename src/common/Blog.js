@@ -2,7 +2,6 @@
 import React from "react";
 
 const Blog = ({ blogData }) => {
-  console.log(blogData);
   const { img, title, subtitle, slug } = blogData;
   return (
     <div className="lg:col-span-4 md:col-span-6 col-span-12">
@@ -22,9 +21,9 @@ const Blog = ({ blogData }) => {
             </li>
           </ul>
           <h3>
-            <a href="#">{title}</a>
+            <a href={`/singlePage/${slug}`}>{title}</a>
           </h3>
-          <a href="#" className="blog-btn">
+          <a href={`/singlePage/${slug}`} className="blog-btn">
             Read More
           </a>
         </div>
