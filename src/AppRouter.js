@@ -4,6 +4,7 @@ import Footer from "./common/Footer";
 import Header from "./common/Header/Header";
 import Home from "./pages/home/Home";
 import SinglePage from "./pages/SinglePage";
+import Testimonial from "./pages/Testimonial";
 import SingleService from "./pages/SingleService";
 
 const AppRouter = () => {
@@ -18,7 +19,11 @@ const AppRouter = () => {
           <Home />
         </Route>
         <Route path="/singlePage/:slug">
+          git checlout
           <SinglePage />
+        </Route>
+        <Route path="/testimonial">
+          <Testimonial />
         </Route>
         <Route path="/serviceDetails/:slug">
           <SingleService />
