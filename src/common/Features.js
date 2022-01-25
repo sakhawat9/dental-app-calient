@@ -16,8 +16,8 @@ const Features = () => {
                   <img src={employee} alt="" className="w-8 h-8" />
                 </div>
                 <h3 className="">
-                  <a href="https://themes.hibootstrap.com/rola/service-post/certified-dentist/">
-                    Certified Dentist{" "}
+                  <a href="#">
+                    Certified Dentist
                   </a>
                 </h3>
               </div>

@@ -51,6 +51,15 @@ a {
   transition: 0.3s;
 }
 
+p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: var(--paragraphColor);
+  font-weight: 400;
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+}
+
 .section-padding {
   padding-bottom: 75px;
   padding-top: 100px;
