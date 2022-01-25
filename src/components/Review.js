@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineStar } from "react-icons/ai";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 import { IoMdQuote } from "react-icons/io";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const PreviousBtn = (props) => {
@@ -71,9 +72,9 @@ const Review = () => {
           </div>
           <div className="hidden lg:col-span-5 lg:block">
             <div className="flex justify-end">
-              <a href="#" className="default-btn">
+              <Link to="testimonial" className="default-btn">
                 View All Review
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -8,7 +8,6 @@
     "img": "https://i.ibb.co/1d9sbQT/service-1.jpg",
     "bannerImg": "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/ser_6.jpg"
   },
-
   {
     "id": 2,
     "name": "Teeth Whitening",
@@ -18,7 +17,6 @@
     "img": "https://i.ibb.co/kSMK3D7/service-2.jpg",
     "bannerImg": "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/ser_5.jpg"
   },
-
   {
     "id": 3,
     "name": "Orthodontics",
@@ -28,7 +26,6 @@
     "img": "https://i.ibb.co/1mXxct4/service-3.jpg",
     "bannerImg": "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/ser_4.jpg"
   },
-
   {
     "id": 4,
     "name": "Dental Implants",
@@ -38,7 +35,6 @@
     "img": "https://i.ibb.co/G2rHHKS/service-4.jpg",
     "bannerImg": "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/ser_6.jpg"
   },
-
   {
     "id": 5,
     "name": "Quality Patients Care",
@@ -48,7 +44,6 @@
     "img": "https://i.ibb.co/55McVHY/service-5.jpg",
     "bannerImg": "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/09/quality-dentist.jpg"
   },
-
   {
     "id": 6,
     "name": "Patient Care",
@@ -58,7 +53,6 @@
     "img": "https://i.ibb.co/jwKM1Zx/service-6.jpg",
     "bannerImg": "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/ser_1.jpg"
   },
-
   {
     "id": 7,
     "name": "Experience",
@@ -68,7 +62,6 @@
     "img": "https://i.ibb.co/98LzFnt/service-7.jpg",
     "bannerImg": "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/ser_2.jpg"
   },
-
   {
     "id": 8,
     "name": "New Technology",

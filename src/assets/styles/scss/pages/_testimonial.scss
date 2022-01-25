@@ -1,15 +1,17 @@
 .testimonial {
+  @apply pt-20 pb-16;
   &__wrapper {
-    @apply grid grid-cols-12 gap-5 justify-center container mb-5;
+    @apply grid grid-cols-12 gap-5 justify-center container;
     &__single-card {
       @apply lg:col-span-4 md:col-span-6 col-span-12;
       &__content {
         background-color: #f7fafb;
         padding: 35px;
         border-radius: 5px;
-        // position: relative;
         transition: var(--transition);
-        margin-bottom: 25px;
+        &:hover {
+          background-color: #eef9ff;
+        }
         &__info {
         }
       }
