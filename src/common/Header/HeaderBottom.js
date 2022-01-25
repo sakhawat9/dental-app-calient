@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { BsSearch } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const HeaderBottom = () => {
   return (
@@ -10,9 +11,9 @@ const HeaderBottom = () => {
         <div className="container">
           <div className="main-responsive-menu">
             <h1>
-              <a className="navbar-brand" href="/">
+              <Link className="navbar-brand" to="/">
                 Rola
-              </a>
+              </Link>
             </h1>
           </div>
         </div>
@@ -21,258 +22,256 @@ const HeaderBottom = () => {
         <div className="container">
           <nav className="flex items-center justify-between main-navbar__navbar navbar-expand-md navbar-light">
             <h1>
-              <a className="navbar-brand" href="/">
+              <Link className="navbar-brand" to="/">
                 Rola
-              </a>
+              </Link>
             </h1>
-            <div
-              className="flex items-center  mean-menu"
-            >
+            <div className="flex items-center  mean-menu">
               <ul className="flex ml-auto navbar-nav">
                 <li className="menu-item  dropdown active nav-item">
-                  <a title="Home" href="/home" className="nav-link">
+                  <Link title="Home" to="/home" className="nav-link">
                     Home
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu" role="menu">
                     <li className="menu-item  active  nav-item">
-                      <a title="Home One" href="#" className="dropdown-item">
+                      <Link title="Home One" to="#" className="dropdown-item">
                         Home One
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item  nav-item">
-                      <a title="Home Two" href="#" className="dropdown-item">
+                      <Link title="Home Two" to="#" className="dropdown-item">
                         Home Two
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item  nav-item">
-                      <a title="Home Three" href="#" className="dropdown-item">
+                      <Link title="Home Three" to="#" className="dropdown-item">
                         Home Three
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item  nav-item">
-                      <a title="Home Four" href="#" className="dropdown-item">
+                      <Link title="Home Four" to="#" className="dropdown-item">
                         Home Four
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item  dropdown nav-item">
-                  <a
-                    title="Dentist"
-                    href="#"
-                    className="nav-link"
-                  >
+                  <Link title="Dentist" to="#" className="nav-link">
                     Dentist
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu" role="menu">
                     <li className="menu-item   nav-item">
-                      <a title="Dentist" href="#" className="dropdown-item">
+                      <Link title="Dentist" to="#" className="dropdown-item">
                         Dentist
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item menu-item-object-doctor nav-item">
-                      <a
+                      <Link
                         title="Single Dentist"
-                        href="#"
+                        to="#"
                         className="dropdown-item"
                       >
                         Single Dentist
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item  dropdown nav-item">
-                  <a
-                    title="Services"
-                    href="#"
-                    className="nav-link"
-                  >
+                  <Link title="Services" to="#" className="nav-link">
                     Services
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu" role="menu">
                     <li className="menu-item nav-item">
-                      <a
+                      <Link
                         title="Our Services"
-                        href="#"
+                        to="#"
                         className="dropdown-item"
                       >
                         Our Services
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item menu-item-object-service nav-item">
-                      <a
+                      <Link
                         title="Single Service"
-                        href="#"
+                        to="#"
                         className="dropdown-item"
                       >
                         Single Service
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item  dropdown nav-item">
-                  <a
-                    title="Pages"
-                    href="#"
-                    className="nav-link"
-                  >
+                  <Link title="Pages" to="#" className="nav-link">
                     Pages
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu" role="menu">
                     <li className="menu-item nav-item">
-                      <a title="About Us" href="#" className="dropdown-item">
+                      <Link title="About Us" to="#" className="dropdown-item">
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item nav-item">
-                      <a title="Appointment" href="#" className="dropdown-item">
+                      <Link
+                        title="Appointment"
+                        to="#"
+                        className="dropdown-item"
+                      >
                         Appointment
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item nav-item">
-                      <a title="Pricing" href="#" className="dropdown-item">
+                      <Link title="Pricing" to="#" className="dropdown-item">
                         Pricing
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item nav-item">
-                      <a
+                      <Link
                         title="Testimonials"
-                        href="#"
+                        to="testimonial"
                         className="dropdown-item"
                       >
                         Testimonials
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item nav-item">
-                      <a title="FAQ’s" href="#" className="dropdown-item">
+                      <Link title="FAQ’s" to="#" className="dropdown-item">
                         FAQ’s
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item nav-item">
-                      <a
+                      <Link
                         title="Privacy Policy"
-                        href="#"
+                        to="/privacyPolicy"
                         className="dropdown-item"
                       >
                         Privacy Policy
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item nav-item">
-                      <a
+                      <Link
                         title="Terms of Services"
-                        href="#"
+                        to="#"
                         className="dropdown-item"
                       >
                         Terms of Services
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item nav-item">
-                      <a title="Coming Soon" href="#" className="dropdown-item">
+                      <Link
+                        title="Coming Soon"
+                        to="#"
+                        className="dropdown-item"
+                      >
                         Coming Soon
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item  dropdown nav-item">
-                  <a title="Shop" href="#" className="nav-link">
+                  <Link title="Shop" to="#" className="nav-link">
                     Shop
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu" role="menu">
                     <li className="menu-item nav-item">
-                      <a title="Shop" href="#" className="dropdown-item">
+                      <Link title="Shop" to="#" className="dropdown-item">
                         Shop
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item  dropdown nav-item">
-                      <a
+                      <Link
                         title="Product details"
-                        href="#"
+                        to="#"
                         className="dropdown-item"
                       >
                         Product details
-                      </a>
+                      </Link>
                       <ul className="dropdown-menu" role="menu">
                         <li className="menu-item menu-item-object-product nav-item">
-                          <a
+                          <Link
                             title="Simple Product"
-                            href="#"
+                            to="#"
                             className="dropdown-item"
                           >
                             Simple Product
-                          </a>
+                          </Link>
                         </li>
                         <li className="menu-item menu-item-object-product nav-item">
-                          <a
+                          <Link
                             title="Thumbs Product"
-                            href="#"
+                            to="#"
                             className="dropdown-item"
                           >
                             Thumbs Product
-                          </a>
+                          </Link>
                         </li>
                         <li className="menu-item menu-item-object-product nav-item">
-                          <a
+                          <Link
                             title="Slider Product"
-                            href="#"
+                            to="#"
                             className="dropdown-item"
                           >
                             Slider Product
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="menu-item nav-item">
-                      <a title="Cart" href="#" className="dropdown-item">
+                      <Link title="Cart" to="#" className="dropdown-item">
                         Cart
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item nav-item">
-                      <a title="Checkout" href="#" className="dropdown-item">
+                      <Link title="Checkout" to="#" className="dropdown-item">
                         Checkout
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item nav-item">
-                      <a title="My Account" href="#" className="dropdown-item">
+                      <Link title="My Account" to="#" className="dropdown-item">
                         My Account
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item  dropdown nav-item">
-                  <a title="Blog" href="#" className="nav-link">
+                  <Link title="Blog" to="#" className="nav-link">
                     Blog
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu" role="menu">
                     <li className="menu-item  nav-item">
-                      <a title="Blog" href="#" className="dropdown-item">
+                      <Link title="Blog" to="#" className="dropdown-item">
                         Blog
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item nav-item">
-                      <a title="Single Blog" href="#" className="dropdown-item">
+                      <Link
+                        title="Single Blog"
+                        to="#"
+                        className="dropdown-item"
+                      >
                         Single Blog
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item nav-item">
-                  <a title="Contact Us" href="#" className="nav-link">
+                  <Link title="Contact Us" to="#" className="nav-link">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="flex items-center others-options">
                 <div className="option-item">
-                  <a className="search-box" href="#">
+                  <Link className="search-box" to="#">
                     <i>
                       <BsSearch />
                     </i>
-                  </a>
+                  </Link>
                 </div>
                 <div className="option-item">
-                  <a href="#" className="default-btn">
+                  <Link to="#" className="default-btn">
                     Book Appointment
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -292,16 +291,16 @@ const HeaderBottom = () => {
             <div className="option-inner">
               <div className="flex items-center others-options">
                 <div className="option-item">
-                  <a className="search-box" href="#">
+                  <Link className="search-box" to="#">
                     <i>
                       <BsSearch />
                     </i>
-                  </a>
+                  </Link>
                 </div>
                 <div className="option-item">
-                  <a href="#" className="default-btn">
+                  <Link to="#" className="default-btn">
                     Book Appointment
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

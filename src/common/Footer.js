@@ -1,8 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -24,61 +30,46 @@ const Footer = () => {
               </li>
               <li>
                 <span>Phone:</span>
-                <a href="tel:088123654987">+088 123 654 987</a>
+                <Link to="tel:088123654987">+088 123 654 987</Link>
               </li>
               <li>
                 <span>Email: </span>
-                <a href="mailto:info@rola.com">info@rola.com</a>
+                <Link to="mailto:info@rola.com">info@rola.com</Link>
               </li>
             </ul>
             <div className="share-link flex">
-              <a href="#" target="_blank">
+              <Link to="#" target="_blank">
                 <FaFacebookF />
-              </a>
-              <a href="#" target="_blank">
+              </Link>
+              <Link to="#" target="_blank">
                 <FaTwitter />
-              </a>
-              <a href="#" target="_blank">
+              </Link>
+              <Link to="#" target="_blank">
                 <FaLinkedinIn />
-              </a>
-              <a href="#" target="_blank">
+              </Link>
+              <Link to="#" target="_blank">
                 <FaInstagram />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="footer__wrapper__single-footer widget_nav_menu lg:col-span-2 md:col-span-6 col-span-6">
             <h3 className="widget_title">Useful Links</h3>
             <div className="menu-quick-links-container">
               <ul id="menu-quick-links" className="menu">
-                <li
-                  id="menu-item-659"
-                  className="menu-item  menu-item-659"
-                >
-                  <a href="#">About Us</a>
+                <li id="menu-item-659" className="menu-item  menu-item-659">
+                  <Link to="#">About Us</Link>
                 </li>
-                <li
-                  id="menu-item-662"
-                  className="menu-item  menu-item-662"
-                >
-                  <a href="#">Our Services</a>
+                <li id="menu-item-662" className="menu-item  menu-item-662">
+                  <Link to="#">Our Services</Link>
                 </li>
-                <li
-                  id="menu-item-677"
-                  className="menu-item  menu-item-677"
-                >
-                  <a href="#">Appointment</a>
+                <li id="menu-item-677" className="menu-item  menu-item-677">
+                  <Link to="#">Appointment</Link>
                 </li>
-                <li
-                  id="menu-item-676"
-                  className="menu-item  menu-item-676"
-                >
-                  <a href="#">Privacy Policy</a>
+                <li id="menu-item-676" className="menu-item  menu-item-676">
+                  <Link to="privacyPolicy">Privacy Policy</Link>
                 </li>
-                <li
-                  id="menu-item-663"
-                  className="menu-item  menu-item-663"
-                >
-                  <a href="#">Contact Us</a>
+                <li id="menu-item-663" className="menu-item  menu-item-663">
+                  <Link to="#">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -91,31 +82,31 @@ const Footer = () => {
                   id="menu-item-1116"
                   className="menu-item  menu-item-object-service menu-item-1116"
                 >
-                  <a href="#">Cosmetic Dentistry</a>
+                  <Link to="#">Cosmetic Dentistry</Link>
                 </li>
                 <li
                   id="menu-item-1117"
                   className="menu-item  menu-item-object-service menu-item-1117"
                 >
-                  <a href="#">General Dentistry</a>
+                  <Link to="#">General Dentistry</Link>
                 </li>
                 <li
                   id="menu-item-1118"
                   className="menu-item  menu-item-object-service menu-item-1118"
                 >
-                  <a href="#">Certified Dentist</a>
+                  <Link to="#">Certified Dentist</Link>
                 </li>
                 <li
                   id="menu-item-1119"
                   className="menu-item  menu-item-object-service menu-item-1119"
                 >
-                  <a href="#">New Technology</a>
+                  <Link to="#">New Technology</Link>
                 </li>
                 <li
                   id="menu-item-1120"
                   className="menu-item  menu-item-object-service menu-item-1120"
                 >
-                  <a href="#">Accept Insurance</a>
+                  <Link to="#">Accept Insurance</Link>
                 </li>
               </ul>
             </div>
@@ -124,35 +115,20 @@ const Footer = () => {
             <h3 className="widget_title">Support</h3>
             <div className="menu-support-container">
               <ul id="menu-support" className="menu">
-                <li
-                  id="menu-item-1132"
-                  className="menu-item  menu-item-1132"
-                >
-                  <a href="#">Our Dentist</a>
+                <li id="menu-item-1132" className="menu-item  menu-item-1132">
+                  <Link to="#">Our Dentist</Link>
                 </li>
-                <li
-                  id="menu-item-1129"
-                  className="menu-item  menu-item-1129"
-                >
-                  <a href="#">Terms of Services</a>
+                <li id="menu-item-1129" className="menu-item  menu-item-1129">
+                  <Link to="#">Terms of Services</Link>
                 </li>
-                <li
-                  id="menu-item-1128"
-                  className="menu-item  menu-item-1128"
-                >
-                  <a href="#">Privacy Policy</a>
+                <li id="menu-item-1128" className="menu-item  menu-item-1128">
+                  <Link to="privacyPolicy">Privacy Policy</Link>
                 </li>
-                <li
-                  id="menu-item-1131"
-                  className="menu-item  menu-item-1131"
-                >
-                  <a href="#">Our Pricing</a>
+                <li id="menu-item-1131" className="menu-item  menu-item-1131">
+                  <Link to="#">Our Pricing</Link>
                 </li>
-                <li
-                  id="menu-item-1133"
-                  className="menu-item  menu-item-1133"
-                >
-                  <a href="#">Testimonials</a>
+                <li id="menu-item-1133" className="menu-item  menu-item-1133">
+                  <Link to="testimonial">Testimonials</Link>
                 </li>
               </ul>
             </div>
@@ -166,9 +142,7 @@ const Footer = () => {
                   consecteturadipiscing elit.
                 </p>
               </div>
-              <form
-                className="mailchimp newsletter-form"
-              >
+              <form className="mailchimp newsletter-form">
                 <input
                   type="email"
                   className="input-newsletter memail"
@@ -197,13 +171,13 @@ const Footer = () => {
           <div className="copyright-area__content">
             <p>
               Copyright © 2021 Rola is Proudly Created by
-              <a
-                href="https://sakhawat.vercel.app"
+              <Link
+                to="https://sakhawat.vercel.app"
                 target="_blank"
                 rel="noopener"
               >
                 Shakib
-              </a>
+              </Link>
             </p>
           </div>
         </div>
