@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Service = ({ data }) => {
   const { name, subtitle, img, slug } = data;
@@ -7,23 +8,23 @@ const Service = ({ data }) => {
     <div className="col-span-6 lg:col-span-3">
       <div className="single-services">
         <div className="services-image">
-          <a href={`serviceDetails/${slug}`}>
+          <Link to={`serviceDetails/${slug}`}>
             <img src={img} alt={name} />
-          </a>
+          </Link>
           <div className="icon">
-            <a href={`serviceDetails/${slug}`}>
+            <Link to={`serviceDetails/${slug}`}>
               <img src={img} alt={name} />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="services-content">
           <h3>
-            <a href={`serviceDetails/${slug}`}>{name}</a>
+            <Link to={`serviceDetails/${slug}`}>{name}</Link>
           </h3>
           <p>{subtitle}</p>
-          <a href={`serviceDetails/${slug}`} className="services-btn">
+          <Link to={`serviceDetails/${slug}`} className="services-btn">
             Read More
-          </a>
+          </Link>
         </div>
       </div>
     </div>

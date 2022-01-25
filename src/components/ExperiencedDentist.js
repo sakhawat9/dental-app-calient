@@ -11,6 +11,7 @@ import {
   FaLongArrowAltRight,
   FaTwitter
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const doctorsData = [
@@ -135,23 +136,23 @@ const Card = ({ item }) => {
       </div>
       <div className="doctor-content">
         <h3>
-          <a href="#">{item.name}</a>
+          <Link to="#">{item.name}</Link>
         </h3>
         <span>{item.expert}</span>
         <div className="social-link">
           <div className="flex share-link">
-            <a href="https://www.facebook.com" target="_blank">
+            <Link to="https://www.facebook.com" target="_blank">
               <FaFacebookF />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank">
+            </Link>
+            <Link to="https://www.linkedin.com" target="_blank">
               <FaTwitter />
-            </a>
-            <a href="https://twitter.com" target="_blank">
+            </Link>
+            <Link to="https://twitter.com" target="_blank">
               <FaLinkedinIn />
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
+            </Link>
+            <Link to="https://www.instagram.com" target="_blank">
               <FaInstagram />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

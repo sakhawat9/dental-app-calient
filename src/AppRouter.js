@@ -4,10 +4,12 @@ import Footer from "./common/Footer";
 import Header from "./common/Header/Header";
 import AllServices from "./pages/AllServices";
 import Home from "./pages/home/Home";
-import SinglePage from "./pages/SinglePage";
-import Testimonial from "./pages/Testimonial";
-import SingleService from "./pages/SingleService";
+import Login from "./pages/Login";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Registry from "./pages/Registry";
+import SinglePage from "./pages/SinglePage";
+import SingleService from "./pages/SingleService";
+import Testimonial from "./pages/Testimonial";
 
 const AppRouter = () => {
   return (
@@ -35,6 +37,12 @@ const AppRouter = () => {
         </Route>
         <Route path="/allService">
           <AllServices />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/registry">
+          <Registry />
         </Route>
       </Switch>
       <Footer />

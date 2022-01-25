@@ -4,13 +4,14 @@
 import React from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { BsStarFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const ServiceDetails = ({ data }) => {
   return (
     <div className="service-details">
       <div className="container">
-        <div className="grid gap-4 grid-cols-12">
-          <div className="lg:col-span-4 col-span-12">
+        <div className="grid grid-cols-12 gap-4">
+          <div className="col-span-12 lg:col-span-4">
             <div className="service-details__sidebar">
               <div className="widget widget_search">
                 <form className="search-form">
@@ -32,51 +33,51 @@ const ServiceDetails = ({ data }) => {
                 </h3>
                 <ul className="popular-service-list">
                   <li>
-                    <div className="flex justify-between items-center">
-                      <a href="#">Whitening</a>
-                      <a href="#">
+                    <div className="flex items-center justify-between">
+                      <Link to="#">Whitening</Link>
+                      <Link to="#">
                         <i className="bx bx-chevrons-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </li>
                   <li>
-                    <div className="flex justify-between items-center">
-                      <a href="#">Cosmetic Dentistry</a>
-                      <a href="#">
+                    <div className="flex items-center justify-between">
+                      <Link to="#">Cosmetic Dentistry</Link>
+                      <Link to="#">
                         <i className="bx bx-chevrons-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </li>
                   <li>
-                    <div className="flex justify-between items-center">
-                      <a href="#">Fillings</a>
-                      <a href="#">
+                    <div className="flex items-center justify-between">
+                      <Link to="#">Fillings</Link>
+                      <Link to="#">
                         <i className="bx bx-chevrons-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </li>
                   <li>
-                    <div className="flex justify-between items-center">
-                      <a href="#">Root Canal</a>
-                      <a href="#">
+                    <div className="flex items-center justify-between">
+                      <Link to="#">Root Canal</Link>
+                      <Link to="#">
                         <i className="bx bx-chevrons-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </li>
                   <li>
-                    <div className="flex justify-between items-center">
-                      <a href="#">Dental Implants</a>
-                      <a href="#">
+                    <div className="flex items-center justify-between">
+                      <Link to="#">Dental Implants</Link>
+                      <Link to="#">
                         <i className="bx bx-chevrons-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </li>
                   <li>
-                    <div className="flex justify-between items-center">
-                      <a href="#">Quality Patients Care</a>
-                      <a href="#">
+                    <div className="flex items-center justify-between">
+                      <Link to="#">Quality Patients Care</Link>
+                      <Link to="#">
                         <i className="bx bx-chevrons-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </li>
                 </ul>
@@ -85,19 +86,19 @@ const ServiceDetails = ({ data }) => {
                 <h3 className="widget_working_time__title">Working Time</h3>
                 <ul>
                   <li>
-                    <div className="flex justify-between items-center">
+                    <div className="flex items-center justify-between">
                       <span>Monday - Thursday</span>
                       <span>08:00 - 18:00</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex justify-between items-center">
+                    <div className="flex items-center justify-between">
                       <span>Friday</span>
                       <span>07:00 - 22:00</span>
                     </div>
                   </li>
                   <li>
-                    <div className="flex justify-between items-center">
+                    <div className="flex items-center justify-between">
                       <span>Saturday</span>
                       <span>08:00 - 18:00</span>
                     </div>
@@ -132,7 +133,7 @@ const ServiceDetails = ({ data }) => {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-8 col-span-12">
+          <div className="col-span-12 lg:col-span-8">
             <div className="services-details-desc">
               <div className="services-details-desc__image">
                 <img src={data[0]?.bannerImg} alt="Teeth Cleaning" />

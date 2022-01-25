@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -16,14 +17,14 @@ const Hero = () => {
                 fames aliquam.</p>
               <ul className="flex justify-center banner-btn md:justify-start">
                 <li>
-                  <a href="#" className="default-btn">
+                  <Link to="#" className="default-btn">
                     Book Appointment
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="optional-btn">
+                  <Link to="#" className="optional-btn">
                     Get Free Consulting
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SinglePageDetails = ({data}) => {
   return (
     <div className="container section-padding-t">
-      <div className="grid gap-4 grid-cols-12">
+      <div className="grid grid-cols-12 gap-4">
         <div className="col-span-12 md:col-span-8">
           <div className="blog-details">
             <div className="article-image">
@@ -15,14 +16,14 @@ const SinglePageDetails = ({data}) => {
               />
             </div>
             <div className="blog-details-content">
-              <div className="entry-meta-info flex justify-between items-center">
+              <div className="flex items-center justify-between entry-meta-info">
                 <span>
-                  <a href="#">Hygiene</a>
+                  <Link to="#">Hygiene</Link>
                 </span>
                 <ul>
                   <li>
                     BY:
-                    <a href="#">rola</a>
+                    <Link to="#">rola</Link>
                   </li>
                   <li>July 31, 2021</li>
                   <li>No Comments</li>
@@ -62,45 +63,45 @@ const SinglePageDetails = ({data}) => {
               <h3 className="widget-title">Category</h3>
               <ul className="cus_widget_categories">
                 <li>
-                  <div className="flex justify-between items-center">
-                    <a href="#">Dental</a>
-                    <a href="#">(2)</a>
+                  <div className="flex items-center justify-between">
+                    <Link to="#">Dental</Link>
+                    <Link to="#">(2)</Link>
                   </div>
                 </li>
                 <li>
-                  <div className="flex justify-between items-center">
-                    <a href="#">Hygiene</a>
-                    <a href="#">(1)</a>
+                  <div className="flex items-center justify-between">
+                    <Link to="#">Hygiene</Link>
+                    <Link to="#">(1)</Link>
                   </div>
                 </li>
                 <li>
-                  <div className="flex justify-between items-center">
-                    <a href="#">Implants</a>
-                    <a href="#">(1)</a>
+                  <div className="flex items-center justify-between">
+                    <Link to="#">Implants</Link>
+                    <Link to="#">(1)</Link>
                   </div>
                 </li>
                 <li>
-                  <div className="flex justify-between items-center">
-                    <a href="#">Technology</a>
-                    <a href="#">(2)</a>
+                  <div className="flex items-center justify-between">
+                    <Link to="#">Technology</Link>
+                    <Link to="#">(2)</Link>
                   </div>
                 </li>
                 <li>
-                  <div className="flex justify-between items-center">
-                    <a href="#">Hygiene</a>
-                    <a href="#">(1)</a>
+                  <div className="flex items-center justify-between">
+                    <Link to="#">Hygiene</Link>
+                    <Link to="#">(1)</Link>
                   </div>
                 </li>
                 <li>
-                  <div className="flex justify-between items-center">
-                    <a href="#">Implants</a>
-                    <a href="#">(1)</a>
+                  <div className="flex items-center justify-between">
+                    <Link to="#">Implants</Link>
+                    <Link to="#">(1)</Link>
                   </div>
                 </li>
                 <li>
-                  <div className="flex justify-between items-center">
-                    <a href="#">Technology</a>
-                    <a href="#">(2)</a>
+                  <div className="flex items-center justify-between">
+                    <Link to="#">Technology</Link>
+                    <Link to="#">(2)</Link>
                   </div>
                 </li>
               </ul>

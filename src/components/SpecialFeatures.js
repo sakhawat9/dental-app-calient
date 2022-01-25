@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 import dental from "../assets/images/dental-care.png";
 import diamond from "../assets/images/diamond.png";
 import hospitalisation from "../assets/images/hospitalisation.png";
@@ -23,10 +24,10 @@ const SpecialFeatures = () => {
             <div className="col-span-12 md:col-span-6 lg:col-span-3">
               <div className="single-core-features">
                 <div className="title">
-                  <img src={hospitalisation} className="w-12 h-12 p-2 bg-java-500 rounded-full"alt="" />
+                  <img src={hospitalisation} className="w-12 h-12 p-2 rounded-full bg-java-500"alt="" />
                   
                   <h3>
-                    <a href="#">Patient Care</a>
+                    <Link to="#">Patient Care</Link>
                   </h3>
                 </div>
                 <p className="text-justify">
@@ -38,9 +39,9 @@ const SpecialFeatures = () => {
             <div className="col-span-12 md:col-span-6 lg:col-span-3">
               <div className="single-core-features">
                 <div className="title">
-                <img src={diamond} className="w-12 h-12 p-2 bg-java-500 rounded-full"alt="" />
+                <img src={diamond} className="w-12 h-12 p-2 rounded-full bg-java-500"alt="" />
                   <h3>
-                    <a href="#">Experience</a>
+                    <Link to="#">Experience</Link>
                   </h3>
                 </div>
                 <p className="text-justify">
@@ -52,9 +53,9 @@ const SpecialFeatures = () => {
             <div className="col-span-12 md:col-span-6 lg:col-span-3">
               <div className="single-core-features">
                 <div className="title">
-                  <img src={dental} className="w-12 h-12 p-2 bg-java-500 rounded-full"alt="" />
+                  <img src={dental} className="w-12 h-12 p-2 rounded-full bg-java-500"alt="" />
                   <h3>
-                    <a href="#">Certified Dentists</a>
+                    <Link to="#">Certified Dentists</Link>
                   </h3>
                 </div>
                 <p className="text-justify">
@@ -66,9 +67,9 @@ const SpecialFeatures = () => {
             <div className="col-span-12 md:col-span-6 lg:col-span-3">
               <div className="single-core-features">
                 <div className="title">
-                  <img src={dental} className="w-12 h-12 p-2 bg-java-500 rounded-full"alt="" />
+                  <img src={dental} className="w-12 h-12 p-2 rounded-full bg-java-500"alt="" />
                   <h3>
-                    <a href="#">Quality Brackets</a>
+                    <Link to="#">Quality Brackets</Link>
                   </h3>
                 </div>
                 <p className="text-justify">

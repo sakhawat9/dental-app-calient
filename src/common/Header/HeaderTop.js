@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { IoIosCall } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const HeaderTop = () => {
   return (
@@ -17,7 +18,7 @@ const HeaderTop = () => {
             <ul className="top-header__information">
               <li>
                 <IoIosCall className="inline" />
-                <a href="tel:088123654988"> +088 123 654 988</a>
+                <Link to="tel:088123654988"> +088 123 654 988</Link>
               </li>
               <li>
                 <FiMapPin className="inline mr-2" />
@@ -25,7 +26,7 @@ const HeaderTop = () => {
               </li>
               <li>
                 <FaRegEnvelopeOpen className="inline mr-2" />
-                <a href="mailto:support@rola.com">support@rola.com</a>
+                <Link to="mailto:support@rola.com">support@rola.com</Link>
               </li>
             </ul>
           </div>
