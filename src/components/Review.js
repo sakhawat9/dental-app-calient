@@ -1,49 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/no-redundant-roles */
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineStar } from "react-icons/ai";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 import { IoMdQuote } from "react-icons/io";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
-
-const data = [
-  {
-    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-3.jpg",
-    name: "Eachann Jhon",
-    title: "Founder",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-4.jpg",
-    name: "Smith Jorge",
-    title: "Designer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-1.jpg",
-    name: "Sarah Taylor",
-    title: "Developer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-2.jpg",
-    name: "Aiken Ward",
-    title: "Designer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    img: "https://cdn.pixabay.com/photo/2022/01/18/16/49/town-6947538_960_720.jpg",
-    name: "Habib Sharabon",
-    title: "Developer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-];
 
 const PreviousBtn = (props) => {
   const { className, onClick } = props;
@@ -88,6 +51,12 @@ const carouselProperties = {
 };
 
 const Review = () => {
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    fetch("/reviewdata.json")
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
   return (
     <>
       <div className="container">
@@ -103,18 +72,15 @@ const Review = () => {
           </div>
           <div className="hidden lg:col-span-5 lg:block">
             <div className="flex justify-end">
-              <a
-                href="#"
-                className="default-btn"
-              >
+              <Link to="testimonial" className="default-btn">
                 View All Review
-              </a>
+              </Link>
             </div>
           </div>
         </div>
         <div className="container mx-auto carousel section-padding">
           <Slider {...carouselProperties}>
-            {data.map((item, index) => (
+            {reviews.map((item, index) => (
               <Card key={index} item={item} />
             ))}
           </Slider>
@@ -147,8 +113,8 @@ const Card = ({ item }) => {
       <p>{item.description}</p>
       <div className="single-review-item__info">
         <img src={item.img} alt="image" />
-        <h3>Eachann Jhon</h3>
-        <span>Founder</span>
+        <h3>{item.name}</h3>
+        <span>{item.title}</span>
       </div>
       <div className="single-review-item__quote-icon">
         <ul>

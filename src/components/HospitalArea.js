@@ -45,7 +45,7 @@ const HospitalArea = () => {
                 </div>
               </div>
 
-              <div className="flex items-center hospital-area__single-card">
+              <div className="flex items-center gap-4 hospital-area__single-card">
                 <div>
                   <img src={dentist02} className="w-20 h-20" alt="" />
                 </div>
