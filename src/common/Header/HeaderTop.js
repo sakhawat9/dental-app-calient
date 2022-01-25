@@ -3,7 +3,9 @@ import React from "react";
 import {
   FaFacebookF,
   FaInstagram,
-  FaLinkedinIn, FaRegEnvelopeOpen, FaTwitter
+  FaLinkedinIn,
+  FaRegEnvelopeOpen,
+  FaTwitter
 } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { IoIosCall } from "react-icons/io";
@@ -26,33 +28,33 @@ const HeaderTop = () => {
               </li>
               <li>
                 <FaRegEnvelopeOpen className="inline mr-2" />
-                <Link to="mailto:support@rola.com">support@rola.com</Link>
+                <Link to="#">support@rola.com</Link>
               </li>
             </ul>
           </div>
           <div className="col-span-12 lg:col-span-4">
             <ul className="top-header__social-media-icons">
               <li>
-                <a target="_blank" href="">
+                <Link to="#" target="_blank">
                   <i>
                     <FaTwitter />
                   </i>
-                </a>
-                <a target="_blank" href="">
+                </Link>
+                <Link to="#" target="_blank">
                   <i>
                     <FaFacebookF />
                   </i>
-                </a>
-                <a target="_blank" href="">
+                </Link>
+                <Link to="#" target="_blank">
                   <i>
                     <FaInstagram />
                   </i>
-                </a>
-                <a target="_blank" href="">
+                </Link>
+                <Link to="#" target="_blank">
                   <i>
                     <FaLinkedinIn />
                   </i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

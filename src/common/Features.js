@@ -24,7 +24,7 @@ const Features = () => {
                 Lpsum dolor sit amet consectetur lor adipiscing elit convallis
                 urna quisque id malesuada loremoi pellen demi text tesque.
               </p>
-              <Link href="#" className="features-btn">
+              <Link to="#" className="features-btn">
                 Read More
               </Link>
             </div>
