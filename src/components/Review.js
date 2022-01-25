@@ -7,44 +7,6 @@ import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 import { IoMdQuote } from "react-icons/io";
 import Slider from "react-slick";
 
-// const data = [
-//   {
-//     img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-3.jpg",
-//     name: "Eachann Jhon",
-//     title: "Founder",
-//     description:
-//       "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-//   },
-//   {
-//     img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-4.jpg",
-//     name: "Smith Jorge",
-//     title: "Designer",
-//     description:
-//       "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-//   },
-//   {
-//     img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-1.jpg",
-//     name: "Sarah Taylor",
-//     title: "Developer",
-//     description:
-//       "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-//   },
-//   {
-//     img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-2.jpg",
-//     name: "Aiken Ward",
-//     title: "Designer",
-//     description:
-//       "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-//   },
-//   {
-//     img: "https://cdn.pixabay.com/photo/2022/01/18/16/49/town-6947538_960_720.jpg",
-//     name: "Habib Sharabon",
-//     title: "Developer",
-//     description:
-//       "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-//   },
-// ];
-
 const PreviousBtn = (props) => {
   const { className, onClick } = props;
   return (
@@ -150,8 +112,8 @@ const Card = ({ item }) => {
       <p>{item.description}</p>
       <div className="single-review-item__info">
         <img src={item.img} alt="image" />
-        <h3>Eachann Jhon</h3>
-        <span>Founder</span>
+        <h3>{item.name}</h3>
+        <span>{item.title}</span>
       </div>
       <div className="single-review-item__quote-icon">
         <ul>
