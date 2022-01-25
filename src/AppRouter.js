@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from "./common/Footer";
 import Header from "./common/Header/Header";
+import AllServices from "./pages/AllServices";
 import Home from "./pages/home/Home";
 import SinglePage from "./pages/SinglePage";
 import Testimonial from "./pages/Testimonial";
@@ -31,6 +32,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/serviceDetails/:slug">
           <SingleService />
+        </Route>
+        <Route path="/allService">
+          <AllServices />
         </Route>
       </Switch>
       <Footer />

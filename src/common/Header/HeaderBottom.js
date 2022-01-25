@@ -20,8 +20,8 @@ const HeaderBottom = () => {
       </div>
       <div className="main-navbar">
         <div className="container">
-          <nav className="flex items-center justify-between main-navbar__navbar navbar-expand-md navbar-light">
-            <h1>
+          <nav className="flex items-center justify-between">
+            <h1 className="text-4xl font-bold">
               <Link className="navbar-brand" to="/">
                 Rola
               </Link>
@@ -84,7 +84,7 @@ const HeaderBottom = () => {
                     <li className="menu-item nav-item">
                       <Link
                         title="Our Services"
-                        to="#"
+                        to="allService"
                         className="dropdown-item"
                       >
                         Our Services
