@@ -19,44 +19,44 @@ const HeaderBottom = () => {
       </div>
       <div className="main-navbar">
         <div className="container">
-          <nav className="flex items-center justify-between main-navbar__navbar navbar-expand-md navbar-light">
-            <h1>
+          <nav className="flex items-center justify-between">
+            <h1 className="text-4xl font-bold">
               <a className="navbar-brand" href="/">
                 Rola
               </a>
             </h1>
             <div
-              className="flex items-center  mean-menu"
+              className="flex items-center mean-menu"
             >
               <ul className="flex ml-auto navbar-nav">
-                <li className="menu-item  dropdown active nav-item">
+                <li className="menu-item dropdown active nav-item">
                   <a title="Home" href="/home" className="nav-link">
                     Home
                   </a>
                   <ul className="dropdown-menu" role="menu">
-                    <li className="menu-item  active  nav-item">
+                    <li className="menu-item active nav-item">
                       <a title="Home One" href="#" className="dropdown-item">
                         Home One
                       </a>
                     </li>
-                    <li className="menu-item  nav-item">
+                    <li className="menu-item nav-item">
                       <a title="Home Two" href="#" className="dropdown-item">
                         Home Two
                       </a>
                     </li>
-                    <li className="menu-item  nav-item">
+                    <li className="menu-item nav-item">
                       <a title="Home Three" href="#" className="dropdown-item">
                         Home Three
                       </a>
                     </li>
-                    <li className="menu-item  nav-item">
+                    <li className="menu-item nav-item">
                       <a title="Home Four" href="#" className="dropdown-item">
                         Home Four
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item  dropdown nav-item">
+                <li className="menu-item dropdown nav-item">
                   <a
                     title="Dentist"
                     href="#"
@@ -65,7 +65,7 @@ const HeaderBottom = () => {
                     Dentist
                   </a>
                   <ul className="dropdown-menu" role="menu">
-                    <li className="menu-item   nav-item">
+                    <li className="menu-item nav-item">
                       <a title="Dentist" href="#" className="dropdown-item">
                         Dentist
                       </a>
@@ -81,7 +81,7 @@ const HeaderBottom = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item  dropdown nav-item">
+                <li className="menu-item dropdown nav-item">
                   <a
                     title="Services"
                     href="#"
@@ -93,7 +93,7 @@ const HeaderBottom = () => {
                     <li className="menu-item nav-item">
                       <a
                         title="Our Services"
-                        href="#"
+                        href="/allService"
                         className="dropdown-item"
                       >
                         Our Services
@@ -110,7 +110,7 @@ const HeaderBottom = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item  dropdown nav-item">
+                <li className="menu-item dropdown nav-item">
                   <a
                     title="Pages"
                     href="#"
@@ -173,7 +173,7 @@ const HeaderBottom = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item  dropdown nav-item">
+                <li className="menu-item dropdown nav-item">
                   <a title="Shop" href="#" className="nav-link">
                     Shop
                   </a>
@@ -183,7 +183,7 @@ const HeaderBottom = () => {
                         Shop
                       </a>
                     </li>
-                    <li className="menu-item  dropdown nav-item">
+                    <li className="menu-item dropdown nav-item">
                       <a
                         title="Product details"
                         href="#"
@@ -238,12 +238,12 @@ const HeaderBottom = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item  dropdown nav-item">
+                <li className="menu-item dropdown nav-item">
                   <a title="Blog" href="#" className="nav-link">
                     Blog
                   </a>
                   <ul className="dropdown-menu" role="menu">
-                    <li className="menu-item  nav-item">
+                    <li className="menu-item nav-item">
                       <a title="Blog" href="#" className="dropdown-item">
                         Blog
                       </a>

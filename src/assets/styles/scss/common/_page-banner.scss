@@ -3,8 +3,8 @@
   background-color: #dfedee;
   z-index: 1;
   &__content h2 {
-    @apply mb-5;
-    font-size: 55px;
+    @apply mb-5 font-bold;
+    font-size: 55px !important;
   }
   ul {
     li {
