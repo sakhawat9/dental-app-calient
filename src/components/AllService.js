@@ -5,8 +5,6 @@ import Pagination from "./Pagination";
 const AllService = () => {
   const [serviceData, setServiceData] = useState([]);
 
-//   const [posts, setPosts] = useState([]);
-//   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(8);
 
@@ -16,14 +14,13 @@ const AllService = () => {
       .then((data) => setServiceData(data));
   }, []);
 
-  
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = serviceData.slice(indexOfFirstPost, indexOfLastPost);
 
   // Change page
-  const paginate = pageNumber => setCurrentPage(pageNumber);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div className="section-padding">
@@ -42,10 +39,10 @@ const AllService = () => {
           ))}
         </div>
         <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={serviceData.length}
-        paginate={paginate}
-      />
+          postsPerPage={postsPerPage}
+          totalPosts={serviceData.length}
+          paginate={paginate}
+        />
       </div>
     </div>
   );
