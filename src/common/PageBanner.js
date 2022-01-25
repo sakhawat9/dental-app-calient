@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PageBanner = ({ title }) => {
   return (
@@ -8,7 +9,7 @@ const PageBanner = ({ title }) => {
           <h2>{title}</h2>
           <ul className="pages-list">
             <li>
-              <a href="/home">Home</a>
+              <Link to="/home">Home</Link>
             </li>
             <li>{title}</li>
           </ul>
