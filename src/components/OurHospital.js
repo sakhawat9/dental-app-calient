@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { AiOutlineCheck } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const OurHospital = () => {
   return (
@@ -62,10 +63,10 @@ const OurHospital = () => {
           </div>
         </div>
       </div>
-      <div className="overview-area py-24">
+      <div className="py-24 overview-area">
         <div className="container">
-          <div className="grid grid-cols-12 gap-4 items-center">
-            <div className="lg:col-span-7 col-span-12">
+          <div className="grid items-center grid-cols-12 gap-4">
+            <div className="col-span-12 lg:col-span-7">
               <div className="overview-area__content">
                 <h3>
                   Nervous Troubled Attractive Staring Right Anxiously!{" "}
@@ -73,17 +74,17 @@ const OurHospital = () => {
                 </h3>
               </div>
             </div>
-            <div className="lg:col-span-5 col-span-12">
+            <div className="col-span-12 lg:col-span-5">
               <ul className="overview-area__list text-end">
                 <li>
-                  <a href="#" className="default-btn">
+                  <Link to="#" className="default-btn">
                     Book Appointment
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="optional-btn">
+                  <Link to="#" className="optional-btn">
                     Get Free Consulting
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

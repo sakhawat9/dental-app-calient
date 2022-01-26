@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 import dentist02 from "../assets/images/dental02.png";
 import dentist01 from "../assets/images/dentist01.png";
 const HospitalArea = () => {
@@ -22,9 +23,9 @@ const HospitalArea = () => {
                 massa sed eget risus. Massa scelesque orurna tempor interdum.
               </p>
               <div className="hospital-area__content__btn">
-                <a href="#" className="default-btn">
+                <Link to="#" className="default-btn">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -36,7 +37,7 @@ const HospitalArea = () => {
                 </div>
                 <div>
                   <h3>
-                    <a href="#">Quality Patients Care</a>
+                    <Link to="#">Quality Patients Care</Link>
                   </h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit sed
@@ -51,7 +52,7 @@ const HospitalArea = () => {
                 </div>
                 <div>
                   <h3>
-                    <a href="#">Experience Dentist</a>
+                    <Link to="#">Experience Dentist</Link>
                   </h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit sed
