@@ -39,3 +39,15 @@
     }
   }
 }
+
+.contact-form {
+  @apply mb-20 p-8;
+  form {
+    input {
+      @apply w-full border border-gray-300 rounded p-3 mb-3;
+    }
+    textarea {
+      @apply w-full border border-gray-300 rounded p-3 mb-3;
+    }
+  }
+}

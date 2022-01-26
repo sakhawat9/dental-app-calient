@@ -1,5 +1,6 @@
 import React from 'react';
 import ServiceBanner from '../common/ServiceBanner';
+import ContactForm from '../components/ContactForm';
 import ContactInformaTion from '../components/ContactInformaTion';
 
 const Contact = () => {
@@ -7,6 +8,7 @@ const Contact = () => {
         <div>
             <ServiceBanner title="Contact Us" />
             <ContactInformaTion />
+            <ContactForm />
         </div>
     );
 };
