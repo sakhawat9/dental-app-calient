@@ -255,7 +255,7 @@ const HeaderBottom = () => {
                   </ul>
                 </li>
                 <li className="menu-item nav-item">
-                  <Link title="Contact Us" to="#" className="nav-link">
+                  <Link title="Contact Us" to="/contact" className="nav-link">
                     Contact Us
                   </Link>
                 </li>

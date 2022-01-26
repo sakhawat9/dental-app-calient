@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from "./common/Footer";
 import Header from "./common/Header/Header";
 import AllServices from "./pages/AllServices";
+import Contact from "./pages/Contact";
 import Home from "./pages/home/Home";
 import Login from "./pages/Login";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -43,6 +44,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/registry">
           <Registry />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
       </Switch>
       <Footer />
