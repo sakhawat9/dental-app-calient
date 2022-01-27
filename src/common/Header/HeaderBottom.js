@@ -234,12 +234,12 @@ const HeaderBottom = () => {
                   </ul>
                 </li>
                 <li className="menu-item dropdown nav-item">
-                  <Link title="Blog" to="#" className="nav-link">
+                  <Link title="Blog" to="/allBlog" className="nav-link">
                     Blog
                   </Link>
                   <ul className="dropdown-menu" role="menu">
                     <li className="menu-item nav-item">
-                      <Link title="Blog" to="#" className="dropdown-item">
+                      <Link title="Blog" to="/allBlog" className="dropdown-item">
                         Blog
                       </Link>
                     </li>
