@@ -25,9 +25,7 @@ const HeaderBottom = () => {
                 Rola
               </a>
             </h1>
-            <div
-              className="flex items-center  mean-menu"
-            >
+            <div className="flex items-center  mean-menu">
               <ul className="flex ml-auto navbar-nav">
                 <li className="menu-item  dropdown active nav-item">
                   <a title="Home" href="/home" className="nav-link">
@@ -57,11 +55,7 @@ const HeaderBottom = () => {
                   </ul>
                 </li>
                 <li className="menu-item  dropdown nav-item">
-                  <a
-                    title="Dentist"
-                    href="#"
-                    className="nav-link"
-                  >
+                  <a title="Dentist" href="#" className="nav-link">
                     Dentist
                   </a>
                   <ul className="dropdown-menu" role="menu">
@@ -82,11 +76,7 @@ const HeaderBottom = () => {
                   </ul>
                 </li>
                 <li className="menu-item  dropdown nav-item">
-                  <a
-                    title="Services"
-                    href="#"
-                    className="nav-link"
-                  >
+                  <a title="Services" href="#" className="nav-link">
                     Services
                   </a>
                   <ul className="dropdown-menu" role="menu">
@@ -111,11 +101,7 @@ const HeaderBottom = () => {
                   </ul>
                 </li>
                 <li className="menu-item  dropdown nav-item">
-                  <a
-                    title="Pages"
-                    href="#"
-                    className="nav-link"
-                  >
+                  <a title="Pages" href="#" className="nav-link">
                     Pages
                   </a>
                   <ul className="dropdown-menu" role="menu">
