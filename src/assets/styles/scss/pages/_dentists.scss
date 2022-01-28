@@ -1,0 +1,60 @@
+.single-doctor {
+  &__title {
+    @apply font-bold;
+  }
+  &__image {
+    @apply col-span-12 md:col-span-3;
+    img {
+      @apply w-full;
+    }
+  }
+  &__content {
+    @apply col-span-12 md:col-span-9;
+  }
+  &__contact-form {
+    @apply mt-4;
+    h2 {
+      @apply font-bold mb-4;
+      font-size: 20px !important;
+    }
+    form {
+      input {
+        @apply w-full border border-java-500 mb-4 p-2 rounded;
+      }
+      button {
+        @apply bg-java-500 hover:bg-java-600 text-white px-8 py-2 rounded;
+      }
+    }
+  }
+}
+.skills-content {
+  @apply mt-4;
+  h3 {
+    @apply font-bold;
+    font-size: 20px !important;
+  }
+  ul {
+    @apply pl-0 mb-0 mt-5;
+    li {
+      @apply mb-5 font-medium rounded flex gap-2 items-center;
+      background-color: #f7fafb;
+      color: var(--paragraphColor);
+      padding: 10px 15px;
+      transition: var(--transition);
+      &:last-child {
+        @apply mb-0;
+      }
+      &:hover {
+        background-color: var(--mainColor);
+        color: var(--whiteColor);
+        svg {
+          color: var(--whiteColor);
+        }
+      }
+      svg {
+        color: var(--mainColor);
+        transition: var(--transition);
+      }
+    }
+  }
+}

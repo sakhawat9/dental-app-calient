@@ -5,10 +5,12 @@ import Header from "./common/Header/Header";
 import AllBlogs from "./pages/AllBlogs";
 import AllServices from "./pages/AllServices";
 import Contact from "./pages/Contact";
+import Dentists from "./pages/Dentists";
 import Home from "./pages/home/Home";
 import Login from "./pages/Login";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Registry from "./pages/Registry";
+import SingleDoctor from "./pages/SingleDoctor";
 import SinglePage from "./pages/SinglePage";
 import SingleService from "./pages/SingleService";
 import Testimonial from "./pages/Testimonial";
@@ -50,6 +52,12 @@ const AppRouter = () => {
         </Route>
         <Route path="/allBlog">
           <AllBlogs />
+        </Route>
+        <Route path="/dentists">
+          <Dentists />
+        </Route>
+        <Route path="/singleDoctor/:id">
+          <SingleDoctor />
         </Route>
       </Switch>
       <Footer />

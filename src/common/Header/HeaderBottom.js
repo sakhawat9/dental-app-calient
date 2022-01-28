@@ -56,12 +56,16 @@ const HeaderBottom = () => {
                   </ul>
                 </li>
                 <li className="menu-item dropdown nav-item">
-                  <Link title="Dentist" to="#" className="nav-link">
+                  <Link title="Dentist" to="/dentists" className="nav-link">
                     Dentist
                   </Link>
                   <ul className="dropdown-menu" role="menu">
                     <li className="menu-item nav-item">
-                      <Link title="Dentist" to="#" className="dropdown-item">
+                      <Link
+                        title="Dentist"
+                        to="/dentists"
+                        className="dropdown-item"
+                      >
                         Dentist
                       </Link>
                     </li>
@@ -227,7 +231,11 @@ const HeaderBottom = () => {
                       </Link>
                     </li>
                     <li className="menu-item nav-item">
-                      <Link title="My Account" to="/login" className="dropdown-item">
+                      <Link
+                        title="My Account"
+                        to="/login"
+                        className="dropdown-item"
+                      >
                         My Account
                       </Link>
                     </li>
@@ -239,14 +247,18 @@ const HeaderBottom = () => {
                   </Link>
                   <ul className="dropdown-menu" role="menu">
                     <li className="menu-item nav-item">
-                      <Link title="Blog" to="/allBlog" className="dropdown-item">
+                      <Link
+                        title="Blog"
+                        to="/allBlog"
+                        className="dropdown-item"
+                      >
                         Blog
                       </Link>
                     </li>
                     <li className="menu-item nav-item">
                       <Link
+                        to="/allBlog"
                         title="Single Blog"
-                        to="#"
                         className="dropdown-item"
                       >
                         Single Blog
