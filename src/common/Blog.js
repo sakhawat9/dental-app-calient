@@ -1,31 +1,32 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Blog = ({ blogData }) => {
   const { img, title, subtitle, slug } = blogData;
   return (
-    <div className="lg:col-span-4 md:col-span-6 col-span-12">
+    <div className="col-span-12 lg:col-span-4 md:col-span-6">
       <div className="single-blog-card">
         <div className="single-blog-card__image">
-          <a href={`/singlePage/${slug}`}>
+          <Link to={`/singlePage/${slug}`}>
             <img src={img} alt={title} />
-          </a>
+          </Link>
         </div>
         <div className="single-blog-card__content">
           <ul className="entry-meta d-flex justify-content-between align-items-center">
             <li>
-              <a href="#">{subtitle}</a>
+              <Link to="#">{subtitle}</Link>
             </li>
             <li>
               <i className="bx bx-calendar"></i> July 31, 2021
             </li>
           </ul>
           <h3>
-            <a href={`/singlePage/${slug}`}>{title}</a>
+            <Link to={`/singlePage/${slug}`}>{title}</Link>
           </h3>
-          <a href={`/singlePage/${slug}`} className="blog-btn">
+          <Link to={`/singlePage/${slug}`} className="blog-btn">
             Read More
-          </a>
+          </Link>
         </div>
       </div>
     </div>

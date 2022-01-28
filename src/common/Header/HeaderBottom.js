@@ -26,42 +26,46 @@ const HeaderBottom = () => {
                 Rola
               </Link>
             </h1>
-            <div className="flex items-center  mean-menu">
+            <div className="flex items-center mean-menu">
               <ul className="flex ml-auto navbar-nav">
-                <li className="menu-item  dropdown active nav-item">
+                <li className="menu-item dropdown active nav-item">
                   <Link title="Home" to="/home" className="nav-link">
                     Home
                   </Link>
                   <ul className="dropdown-menu" role="menu">
-                    <li className="menu-item  active  nav-item">
+                    <li className="menu-item active nav-item">
                       <Link title="Home One" to="#" className="dropdown-item">
                         Home One
                       </Link>
                     </li>
-                    <li className="menu-item  nav-item">
+                    <li className="menu-item nav-item">
                       <Link title="Home Two" to="#" className="dropdown-item">
                         Home Two
                       </Link>
                     </li>
-                    <li className="menu-item  nav-item">
+                    <li className="menu-item nav-item">
                       <Link title="Home Three" to="#" className="dropdown-item">
                         Home Three
                       </Link>
                     </li>
-                    <li className="menu-item  nav-item">
+                    <li className="menu-item nav-item">
                       <Link title="Home Four" to="#" className="dropdown-item">
                         Home Four
                       </Link>
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item  dropdown nav-item">
-                  <Link title="Dentist" to="#" className="nav-link">
+                <li className="menu-item dropdown nav-item">
+                  <Link title="Dentist" to="/dentists" className="nav-link">
                     Dentist
                   </Link>
                   <ul className="dropdown-menu" role="menu">
-                    <li className="menu-item   nav-item">
-                      <Link title="Dentist" to="#" className="dropdown-item">
+                    <li className="menu-item nav-item">
+                      <Link
+                        title="Dentist"
+                        to="/dentists"
+                        className="dropdown-item"
+                      >
                         Dentist
                       </Link>
                     </li>
@@ -76,7 +80,7 @@ const HeaderBottom = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item  dropdown nav-item">
+                <li className="menu-item dropdown nav-item">
                   <Link title="Services" to="#" className="nav-link">
                     Services
                   </Link>
@@ -101,7 +105,7 @@ const HeaderBottom = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item  dropdown nav-item">
+                <li className="menu-item dropdown nav-item">
                   <Link title="Pages" to="#" className="nav-link">
                     Pages
                   </Link>
@@ -168,7 +172,7 @@ const HeaderBottom = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item  dropdown nav-item">
+                <li className="menu-item dropdown nav-item">
                   <Link title="Shop" to="#" className="nav-link">
                     Shop
                   </Link>
@@ -178,7 +182,7 @@ const HeaderBottom = () => {
                         Shop
                       </Link>
                     </li>
-                    <li className="menu-item  dropdown nav-item">
+                    <li className="menu-item dropdown nav-item">
                       <Link
                         title="Product details"
                         to="#"
@@ -227,26 +231,34 @@ const HeaderBottom = () => {
                       </Link>
                     </li>
                     <li className="menu-item nav-item">
-                      <Link title="My Account" to="#" className="dropdown-item">
+                      <Link
+                        title="My Account"
+                        to="/login"
+                        className="dropdown-item"
+                      >
                         My Account
                       </Link>
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item  dropdown nav-item">
-                  <Link title="Blog" to="#" className="nav-link">
+                <li className="menu-item dropdown nav-item">
+                  <Link title="Blog" to="/allBlog" className="nav-link">
                     Blog
                   </Link>
                   <ul className="dropdown-menu" role="menu">
-                    <li className="menu-item  nav-item">
-                      <Link title="Blog" to="#" className="dropdown-item">
+                    <li className="menu-item nav-item">
+                      <Link
+                        title="Blog"
+                        to="/allBlog"
+                        className="dropdown-item"
+                      >
                         Blog
                       </Link>
                     </li>
                     <li className="menu-item nav-item">
                       <Link
+                        to="/allBlog"
                         title="Single Blog"
-                        to="#"
                         className="dropdown-item"
                       >
                         Single Blog
@@ -255,7 +267,7 @@ const HeaderBottom = () => {
                   </ul>
                 </li>
                 <li className="menu-item nav-item">
-                  <Link title="Contact Us" to="#" className="nav-link">
+                  <Link title="Contact Us" to="/contact" className="nav-link">
                     Contact Us
                   </Link>
                 </li>

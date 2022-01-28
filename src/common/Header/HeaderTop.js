@@ -3,10 +3,13 @@ import React from "react";
 import {
   FaFacebookF,
   FaInstagram,
-  FaLinkedinIn, FaRegEnvelopeOpen, FaTwitter
+  FaLinkedinIn,
+  FaRegEnvelopeOpen,
+  FaTwitter
 } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { IoIosCall } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const HeaderTop = () => {
   return (
@@ -17,7 +20,7 @@ const HeaderTop = () => {
             <ul className="top-header__information">
               <li>
                 <IoIosCall className="inline" />
-                <a href="tel:088123654988"> +088 123 654 988</a>
+                <Link to="tel:088123654988"> +088 123 654 988</Link>
               </li>
               <li>
                 <FiMapPin className="inline mr-2" />
@@ -25,33 +28,33 @@ const HeaderTop = () => {
               </li>
               <li>
                 <FaRegEnvelopeOpen className="inline mr-2" />
-                <a href="mailto:support@rola.com">support@rola.com</a>
+                <Link to="#">support@rola.com</Link>
               </li>
             </ul>
           </div>
           <div className="col-span-12 lg:col-span-4">
             <ul className="top-header__social-media-icons">
               <li>
-                <a target="_blank" href="">
+                <Link to="#" target="_blank">
                   <i>
                     <FaTwitter />
                   </i>
-                </a>
-                <a target="_blank" href="">
+                </Link>
+                <Link to="#" target="_blank">
                   <i>
                     <FaFacebookF />
                   </i>
-                </a>
-                <a target="_blank" href="">
+                </Link>
+                <Link to="#" target="_blank">
                   <i>
                     <FaInstagram />
                   </i>
-                </a>
-                <a target="_blank" href="">
+                </Link>
+                <Link to="#" target="_blank">
                   <i>
                     <FaLinkedinIn />
                   </i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

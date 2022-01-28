@@ -2,12 +2,18 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from "./common/Footer";
 import Header from "./common/Header/Header";
+import AllBlogs from "./pages/AllBlogs";
 import AllServices from "./pages/AllServices";
+import Contact from "./pages/Contact";
+import Dentists from "./pages/Dentists";
 import Home from "./pages/home/Home";
-import SinglePage from "./pages/SinglePage";
-import Testimonial from "./pages/Testimonial";
-import SingleService from "./pages/SingleService";
+import Login from "./pages/Login";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Registry from "./pages/Registry";
+import SingleDoctor from "./pages/SingleDoctor";
+import SinglePage from "./pages/SinglePage";
+import SingleService from "./pages/SingleService";
+import Testimonial from "./pages/Testimonial";
 
 const AppRouter = () => {
   return (
@@ -21,7 +27,6 @@ const AppRouter = () => {
           <Home />
         </Route>
         <Route path="/singlePage/:slug">
-          git checlout
           <SinglePage />
         </Route>
         <Route path="/testimonial">
@@ -35,6 +40,24 @@ const AppRouter = () => {
         </Route>
         <Route path="/allService">
           <AllServices />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/registry">
+          <Registry />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/allBlog">
+          <AllBlogs />
+        </Route>
+        <Route path="/dentists">
+          <Dentists />
+        </Route>
+        <Route path="/singleDoctor/:id">
+          <SingleDoctor />
         </Route>
       </Switch>
       <Footer />

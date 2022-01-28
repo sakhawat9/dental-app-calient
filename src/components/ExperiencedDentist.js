@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from "react";
-// import { AiOutlineStar } from "react-icons/ai";
+import React, { useEffect, useState } from "react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -11,40 +10,9 @@ import {
   FaLongArrowAltRight,
   FaTwitter
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
-const doctorsData = [
-  {
-    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2022/01/dentist-3.jpg",
-    name: "Dr. Sarah Tailor",
-    expert: "Prosthodontics Dentist",
-  },
-  {
-    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2022/01/dentist-1.jpg",
-    name: "Dr. Rose Tailor",
-    expert: "Prosthodontics Dentist",
-  },
-  {
-    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2022/01/dentist-2.jpg",
-    name: "Dr. Melborn Doe",
-    expert: "Prosthodontics Dentist",
-  },
-  {
-    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/10/doctor-new-3.jpg",
-    name: "Dr. Jhon Melborn",
-    expert: "Prosthodontics Dentist",
-  },
-  {
-    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/10/doctor-new-4.jpg",
-    name: "Dr. Ena Dicrosa",
-    expert: "Aesthetic Dentistry",
-  },
-  {
-    img: "https://themes.hibootstrap.com/rola/wp-content/uploads/2021/10/doctor-new-6.jpg",
-    name: "Dr. Addison Smith",
-    expert: "Gastroenterologists",
-  },
-];
 
 const PreviousBtn = (props) => {
   const { className, onClick } = props;
@@ -103,6 +71,13 @@ const carouselProperties = {
 };
 
 const ExperiencedDentist = () => {
+  const [data, setData] = useState([]);
+  console.log(data);
+  useEffect(() => {
+    fetch("/doctorData.json")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
   return (
     <div className="experienced-dentist">
       <div className="special-features__title ">
@@ -118,8 +93,8 @@ const ExperiencedDentist = () => {
         style={{ paddingTop: "0px" }}
       >
         <Slider {...carouselProperties}>
-          {doctorsData.map((item, index) => (
-            <Card key={index} item={item} />
+          {data.map((item) => (
+            <Card key={item.id} item={item} />
           ))}
         </Slider>
       </div>
@@ -135,23 +110,23 @@ const Card = ({ item }) => {
       </div>
       <div className="doctor-content">
         <h3>
-          <a href="#">{item.name}</a>
+          <Link to="#">{item.name}</Link>
         </h3>
         <span>{item.expert}</span>
         <div className="social-link">
           <div className="flex share-link">
-            <a href="https://www.facebook.com" target="_blank">
+            <Link to="https://www.facebook.com" target="_blank">
               <FaFacebookF />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank">
+            </Link>
+            <Link to="https://www.linkedin.com" target="_blank">
               <FaTwitter />
-            </a>
-            <a href="https://twitter.com" target="_blank">
+            </Link>
+            <Link to="https://twitter.com" target="_blank">
               <FaLinkedinIn />
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
+            </Link>
+            <Link to="https://www.instagram.com" target="_blank">
               <FaInstagram />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
